@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/typografi/static/css/main.5f361e03.chunk.css",
-    "main.js": "/typografi/static/js/main.43c63462.chunk.js",
-    "main.js.map": "/typografi/static/js/main.43c63462.chunk.js.map",
+    "main.css": "/typografi/static/css/main.2bb05b49.chunk.css",
+    "main.js": "/typografi/static/js/main.db295459.chunk.js",
+    "main.js.map": "/typografi/static/js/main.db295459.chunk.js.map",
     "runtime-main.js": "/typografi/static/js/runtime-main.265ed362.js",
     "runtime-main.js.map": "/typografi/static/js/runtime-main.265ed362.js.map",
-    "static/js/2.d4ebdf5c.chunk.js": "/typografi/static/js/2.d4ebdf5c.chunk.js",
-    "static/js/2.d4ebdf5c.chunk.js.map": "/typografi/static/js/2.d4ebdf5c.chunk.js.map",
+    "static/js/2.2e3d2aee.chunk.js": "/typografi/static/js/2.2e3d2aee.chunk.js",
+    "static/js/2.2e3d2aee.chunk.js.map": "/typografi/static/js/2.2e3d2aee.chunk.js.map",
     "index.html": "/typografi/index.html",
-    "precache-manifest.0b81adeb4a619462644be8545249d993.js": "/typografi/precache-manifest.0b81adeb4a619462644be8545249d993.js",
+    "precache-manifest.1fc4b350de5e549ed7ade7eb0981e096.js": "/typografi/precache-manifest.1fc4b350de5e549ed7ade7eb0981e096.js",
     "service-worker.js": "/typografi/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/typografi/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.d4ebdf5c.chunk.js.LICENSE.txt": "/typografi/static/js/2.d4ebdf5c.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/typografi/static/media/logo.5d5d9eef.svg"
+    "static/css/main.2bb05b49.chunk.css.map": "/typografi/static/css/main.2bb05b49.chunk.css.map",
+    "static/js/2.2e3d2aee.chunk.js.LICENSE.txt": "/typografi/static/js/2.2e3d2aee.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.265ed362.js",
-    "static/js/2.d4ebdf5c.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.43c63462.chunk.js"
+    "static/js/2.2e3d2aee.chunk.js",
+    "static/css/main.2bb05b49.chunk.css",
+    "static/js/main.db295459.chunk.js"
   ]
 }
