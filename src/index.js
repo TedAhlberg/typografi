@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css'
 
-import Intro from './intro/Intro'
+import Main from './Main'
 
-ReactDOM.render(<Intro />, document.getElementById('root'));
+ReactDOM.render(<Main />, document.getElementById('root'));
 
