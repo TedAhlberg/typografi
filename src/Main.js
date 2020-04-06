@@ -1,24 +1,26 @@
-import React from 'react';
-import './Main.css';
-
-import Touch from './touchHandler'
+import React from 'react'
+import './Main.css'
 
 import Intro from './intro/Intro'
 import IntroSurvey from './intro/IntroSurvey'
+import Article from './article/Article'
+
+import touch from './touchHandler'
 
 class Main extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       elementShowing: 0,
+      readArticles: [],
+      readFonts: []
     }
   }
 
   onNext = (callback) => {
     var res = {
       info: callback,
-      touches: Touch.getArrays(),
-      speed: ""
+      touches: touch.getArrays()
     }
 
     var i = this.state.elementShowing
@@ -39,10 +41,14 @@ class Main extends React.Component {
     if (i > 1 && i < 5) { console.log(this.state) }
     return (
       <div
-        onTouchStart={Touch.touchStart}
-        onTouchMove={Touch.touchMove}
-        onTouchEnd={Touch.touchEnd}>
-
+        onTouchStart={touch.touchStart}
+        onTouchMove={touch.touchMove}
+        onTouchEnd={touch.touchEnd}>
+          <Article 
+            readArticles={this.state.readArticles}
+            readFonts={this.state.readFonts}
+            onNext={this.onNext}
+          />
       </div>
     )
   }

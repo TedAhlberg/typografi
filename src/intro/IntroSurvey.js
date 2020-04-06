@@ -16,16 +16,16 @@ class IntroSurvey extends React.Component {
   }
 
   handleNumberChange = (numberEvent) => {
-    this.setState({ number: numberEvent.target.value.replace(/\D/, '')})
+    this.setState({ number: numberEvent.target.value.replace(/\D/, '') })
   }
 
   render() {
     return (
       <div>
         <span>input numbers</span>
-        <input type="text" 
+        <input type="text"
           value={this.state.number}
-          onChange={this.handleNumberChange}/>
+          onChange={this.handleNumberChange} />
 
         <span>rg1</span>
         <input type="radio" name="rg1" value="1"
@@ -55,7 +55,7 @@ class IntroSurvey extends React.Component {
 
         <button onClick={this.onNext}>
           Starta
-      </button>
+        </button>
       </div>
     )
   }
