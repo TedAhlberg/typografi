@@ -1,0 +1,7 @@
+:root{
+    --main-article-font: ;
+}
+
+p {
+    font-family: var(--main-article-font);
+}

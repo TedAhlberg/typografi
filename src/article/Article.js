@@ -1,26 +1,40 @@
 import React from 'react'
+import './Article.css'
 
 import articles from '../res/articles.json'
+import typo from '../res/typo.json'
+
+import util from '../util/general'
 
 class Article extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      currentArticle: this.getCurrentArticle()
+      currentArticle: this.getCurrentArticle(),
+      currentFont: this.getCurrentFont()
     }
-    this.getCurrentFont()
+    document.documentElement.style.setProperty(
+      '--main-article-font',
+      typo.fonts[this.state.currentFont]
+    )
+
+    let log = {
+      article: this.state.currentArticle,
+      font: typo.fonts[this.state.currentFont]
+    }
+    console.log(log)
   }
 
   getCurrentArticle = () => {
-    let readArticles = this.props.readArticles
-    let articleIndex = Math.floor(Math.random() * articles.length)
-    while (readArticles.includes(articleIndex))
-      articleIndex++
-    return articleIndex
+    return util.getRandomElementFrom(
+      this.props.readArticles, articles.length
+    )
   }
 
   getCurrentFont = () => {
-
+    return util.getRandomElementFrom(
+      this.props.readFonts, typo.fonts.length
+    )
   }
 
   genereateParagraphs = () => {
@@ -33,7 +47,11 @@ class Article extends React.Component {
   }
 
   onNext = () => {
-
+    let callback = {
+      readArticle: this.state.currentArticle,
+      readFont: this.state.currentFont
+    }
+    this.props.onNext(callback)
   }
 
   render() {

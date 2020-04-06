@@ -5,7 +5,7 @@ import Intro from './intro/Intro'
 import IntroSurvey from './intro/IntroSurvey'
 import Article from './article/Article'
 
-import touch from './touchHandler'
+import touch from './util/touchHandler'
 
 class Main extends React.Component {
   constructor(props) {
