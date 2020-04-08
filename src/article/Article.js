@@ -26,12 +26,14 @@ class Article extends React.Component {
   }
 
   getCurrentArticle = () => {
+    console.log(this.props.readArticles)
     return util.getRandomElementFrom(
       this.props.readArticles, articles.length
     )
   }
 
   getCurrentFont = () => {
+    console.log(this.props.readFonts)
     return util.getRandomElementFrom(
       this.props.readFonts, typo.fonts.length
     )
@@ -42,12 +44,14 @@ class Article extends React.Component {
     let paragraphs = articles[i].text
     let elements = []
     for (let p in paragraphs)
-      elements.push(<p key={p}>{paragraphs[p]}</p>)
+      elements.push(<p key={p} 
+        className="article">{paragraphs[p]}</p>)
     return elements
   }
 
   onNext = () => {
     let callback = {
+      speed: 0,
       readArticle: this.state.currentArticle,
       readFont: this.state.currentFont
     }

@@ -3,7 +3,10 @@ import React from 'react'
 class IntroSurvey extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {}
+    this.state = {
+      screen_width: window.innerWidth,
+      screen_height: window.innerHeight
+    }
   }
 
   onNext = () => {

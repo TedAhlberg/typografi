@@ -1,4 +1,5 @@
 const getRandomElementFrom = (array, size) => {
+  console.log("Array: " + array)
   let index = Math.floor(Math.random() * size)
   while (array.includes(index)) {
     index++

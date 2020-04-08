@@ -2,6 +2,6 @@
     --main-article-font: ;
 }
 
-p {
+.article {
     font-family: var(--main-article-font);
 }

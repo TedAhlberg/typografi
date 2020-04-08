@@ -16,7 +16,11 @@ const touchMove = (event) => {
 }
 
 const touchEnd = () => {
-  endArray.push({ latestMove })
+  if (latestMove !== undefined)
+    endArray.push({
+      x: latestMove.x,
+      y: latestMove.y
+    })
 }
 
 const getArrays = () => {
