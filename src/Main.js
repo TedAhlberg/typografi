@@ -6,7 +6,7 @@ import IntroSurvey from './intro/IntroSurvey'
 import Article from './article/Article'
 import ArticleSurvey from './article/ArticleSurvey'
 
-import touch from './util/touchHandler'
+import touch from './util/touch'
 
 class Main extends React.Component {
   constructor(props) {
@@ -32,7 +32,8 @@ class Main extends React.Component {
         console.log("article")
 
         let data = {
-          speed: "",
+          speed: callback.speed,
+          rawSpeed: callback.rawSpeed,
           touch: touch.getArrays()
         }
         this.setState({

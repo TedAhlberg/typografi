@@ -5,6 +5,7 @@ import articles from '../res/articles.json'
 import typo from '../res/typo.json'
 
 import util from '../util/general'
+import timer from '../util/timer'
 
 class Article extends React.Component {
   constructor(props) {
@@ -17,7 +18,9 @@ class Article extends React.Component {
       '--main-article-font',
       typo.fonts[this.state.currentFont]
     )
+    timer.start()
 
+    //debug
     let log = {
       article: this.state.currentArticle,
       font: typo.fonts[this.state.currentFont]
@@ -44,14 +47,17 @@ class Article extends React.Component {
     let paragraphs = articles[i].text
     let elements = []
     for (let p in paragraphs)
-      elements.push(<p key={p} 
+      elements.push(<p key={p}
         className="article">{paragraphs[p]}</p>)
     return elements
   }
 
   onNext = () => {
+    let speed = timer.stop()
+
     let callback = {
-      speed: 0,
+      speed: timer.formatTime(speed),
+      rawSpeed: speed,
       readArticle: this.state.currentArticle,
       readFont: this.state.currentFont
     }
@@ -62,7 +68,7 @@ class Article extends React.Component {
     return (
       <div>
         {/* debug */}
-    <span>({this.props.readArticles.length}/4)</span>
+        <span>({this.props.readArticles.length + 1}/4)</span>
 
         <h2>{articles[this.state.currentArticle].title}</h2>
         {this.genereateParagraphs()}
