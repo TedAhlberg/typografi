@@ -8,8 +8,6 @@ import ArticleSurvey from './article/ArticleSurvey'
 
 import touch from './util/touchHandler'
 
-import typo from './res/typo.json'
-
 class Main extends React.Component {
   constructor(props) {
     super(props)
@@ -33,8 +31,6 @@ class Main extends React.Component {
       if ((i % 2) === 0) {
         console.log("article")
 
-        let readFont = typo.fonts[callback.readFont]
-
         let data = {
           speed: "",
           touch: touch.getArrays()
@@ -42,7 +38,7 @@ class Main extends React.Component {
         this.setState({
           articleData: this.state.articleData.concat(data),
           readArticles: this.state.readArticles.concat(callback.readArticle),
-          readFonts: this.state.readFonts.concat(readFont)
+          readFonts: this.state.readFonts.concat(callback.readFont)
         })
       //ArticleSurvey
       } else {
