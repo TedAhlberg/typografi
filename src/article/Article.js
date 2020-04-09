@@ -61,6 +61,9 @@ class Article extends React.Component {
   render() {
     return (
       <div>
+        {/* debug */}
+    <span>({this.props.readArticles.length}/4)</span>
+
         <h2>{articles[this.state.currentArticle].title}</h2>
         {this.genereateParagraphs()}
 
