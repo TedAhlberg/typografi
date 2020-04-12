@@ -1,14 +1,15 @@
 {
+    "defaultSize": "20pt",
     "fonts": [
         "Times New Roman",
         "Arial",
         "Verdana",
         "Goergia"
     ],
-    "font-sizes": [
-        16,
-        20,
-        24
+    "sizes": [
+        "16pt",
+        "24pt",
+        "26pt"
     ],
     "line-height": ""
 }

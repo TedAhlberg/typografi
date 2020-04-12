@@ -1,10 +1,11 @@
 import React from 'react'
 import './Main.css'
 
-import Intro from './intro/Intro'
-import IntroSurvey from './intro/IntroSurvey'
+import Intro from './pages/Intro'
+import IntroSurvey from './pages/IntroSurvey'
 import Article from './article/Article'
 import ArticleSurvey from './article/ArticleSurvey'
+import Outro from './pages/Outro'
 
 import util from './util/general'
 import touch from './util/touch'
@@ -33,11 +34,10 @@ class Main extends React.Component {
     }
 
     if (i > 1 && i < 15) {
-      if (i >= 9 && this.state.testType === "font") {
-        console.log("changed testType")
-        this.setState({ 
+      if (i >= 8 && this.state.testType === "font") {
+        this.setState({
           fastestFont: util.getFastestFont(this.state.articleData),
-          testType: "size" 
+          testType: "size"
         })
       }
 
@@ -46,18 +46,32 @@ class Main extends React.Component {
         let articleData = {
           speed: callback.speed,
           rawSpeed: callback.rawSpeed,
-          readArticle: callback.readArticle, 
+          readArticle: callback.readArticle,
+
           readFont: callback.readFont,
           readFontString: callback.readFontString,
+
+          readSize: callback.readSize,
+          readSizeString: callback.readSizeString,
+
           touch: touch.getArrays(),
           testType: this.state.testType
         }
-        this.setState({
-          articleData: this.state.articleData.concat(articleData),
-          readArticles: this.state.readArticles.concat(callback.readArticle),
-          readFonts: this.state.readFonts.concat(callback.readFont),
-          readSizes: this.state.readSizes.concat(callback.readSize)
-        })
+
+        if (this.state.testType === "font") {
+          this.setState({
+            articleData: this.state.articleData.concat(articleData),
+            readArticles: this.state.readArticles.concat(callback.readArticle),
+            readFonts: this.state.readFonts.concat(callback.readFont)
+          })
+        }
+        if (this.state.testType === "size") {
+          this.setState({
+            articleData: this.state.articleData.concat(articleData),
+            readArticles: this.state.readArticles.concat(callback.readArticle),
+            readSizes: this.state.readSizes.concat(callback.readSize)
+          })
+        }
 
         //ArticleSurvey
       } else {
@@ -73,14 +87,19 @@ class Main extends React.Component {
 
   render() {
     let i = this.state.elementIndex
+
+    //Intro
     if (i === 0)
       return (<Intro onNext={this.onNext} />)
 
+    //Intro Survey  
     if (i === 1)
       return (<IntroSurvey onNext={this.onNext} />)
 
-    if (i > 1 && i < 15) {
+    //Article  
+    if (i > 1 && i < 16) {
       if ((i % 2) === 0) {
+        console.log(this.state)
         return (<div
           onTouchStart={touch.touchStart}
           onTouchMove={touch.touchMove}
@@ -88,10 +107,13 @@ class Main extends React.Component {
           <Article
             readArticles={this.state.readArticles}
             readFonts={this.state.readFonts}
+            readSizes={this.state.readSizes}
+            fastestFont={this.state.fastestFont}
             testType={this.state.testType}
             onNext={this.onNext} />
-        </div>
-        )
+        </div>)
+
+        //Article Survey
       } else {
         return (
           <ArticleSurvey
@@ -99,6 +121,11 @@ class Main extends React.Component {
             onNext={this.onNext} />
         )
       }
+    }
+
+    //Outro
+    if (i === 16) {
+      return (<Outro />)
     }
   }
 }

@@ -16,7 +16,7 @@ const getFastestFont = (articleData) => {
       fontIndex = i
     }
   }
-  return articleData[fontIndex].readFontString 
+  return articleData[fontIndex].readFont 
 }
 
 export default { getRandomElementFrom, getFastestFont }

@@ -10,26 +10,34 @@ import typo from '../res/typo.json'
 class Article extends React.Component {
   constructor(props) {
     super(props)
-    if (this.props.testType === "font"){
-      this.state = { 
+    if (this.props.testType === "font") {
+      this.state = {
         currentArticle: this.getCurrentArticle(),
-        currentFont: this.getCurrentFont() 
+        currentFont: this.getCurrentFont(),
+        currentSize: typo.defaultSize
       }
     }
 
-    if (this.props.testType === "size"){
-      this.state = { 
+    if (this.props.testType === "size") {
+      this.state = {
         currentArticle: this.getCurrentArticle(),
-        currentFont: this.props.fastestFont 
+        currentFont: this.props.fastestFont,
+        currentSize: this.getCurrentSize(),
       }
+      console.log("size: " + typo.sizes[this.state.currentSize])
+      document.documentElement.style.setProperty(
+        '--main-article-size',
+        typo.sizes[this.state.currentSize]
+      )
     }
 
+    
     document.documentElement.style.setProperty(
       '--main-article-font',
       typo.fonts[this.state.currentFont]
     )
 
-      timer.start()
+    timer.start()
 
     //debug
     let log = {
@@ -40,16 +48,23 @@ class Article extends React.Component {
   }
 
   getCurrentArticle = () => {
-    console.log(this.props.readArticles)
+    console.log("readArticles: " + this.props.readArticles)
     return util.getRandomElementFrom(
       this.props.readArticles, articles.length
     )
   }
 
   getCurrentFont = () => {
-    console.log(this.props.readFonts)
+    console.log("readFonts: " + this.props.readFonts)
     return util.getRandomElementFrom(
       this.props.readFonts, typo.fonts.length
+    )
+  }
+
+  getCurrentSize = () => {
+    console.log("readSizes: " + this.props.readSizes)
+    return util.getRandomElementFrom(
+      this.props.readSizes, typo.sizes.length
     )
   }
 
@@ -70,8 +85,12 @@ class Article extends React.Component {
       speed: timer.formatTime(speed),
       rawSpeed: speed,
       readArticle: this.state.currentArticle,
+
       readFont: this.state.currentFont,
-      readFontString: typo.fonts[this.state.currentFont]
+      readFontString: typo.fonts[this.state.currentFont],
+
+      readSize: this.state.currentSize,
+      readSizeString: typo.sizes[this.state.currentSize]
     }
     this.props.onNext(callback)
   }
