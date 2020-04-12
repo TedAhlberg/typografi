@@ -1,7 +1,9 @@
 :root{
     --main-article-font: ;
+    --main-article-size: 16pt;
 }
 
 .article {
     font-family: var(--main-article-font);
+    font-size: var(--main-article-size);
 }

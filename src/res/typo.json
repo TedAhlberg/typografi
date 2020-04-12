@@ -5,7 +5,10 @@
         "Verdana",
         "Goergia"
     ],
-    "font-size": "",
-    "font-sizes": [],
+    "font-sizes": [
+        16,
+        20,
+        24
+    ],
     "line-height": ""
 }

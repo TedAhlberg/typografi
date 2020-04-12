@@ -1,24 +1,35 @@
 import React from 'react'
 import './Article.css'
 
-import articles from '../res/articles.json'
-import typo from '../res/typo.json'
-
 import util from '../util/general'
 import timer from '../util/timer'
+
+import articles from '../res/articles.json'
+import typo from '../res/typo.json'
 
 class Article extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      currentArticle: this.getCurrentArticle(),
-      currentFont: this.getCurrentFont()
+    if (this.props.testType === "font"){
+      this.state = { 
+        currentArticle: this.getCurrentArticle(),
+        currentFont: this.getCurrentFont() 
+      }
     }
+
+    if (this.props.testType === "size"){
+      this.state = { 
+        currentArticle: this.getCurrentArticle(),
+        currentFont: this.props.fastestFont 
+      }
+    }
+
     document.documentElement.style.setProperty(
       '--main-article-font',
       typo.fonts[this.state.currentFont]
     )
-    timer.start()
+
+      timer.start()
 
     //debug
     let log = {
@@ -59,7 +70,8 @@ class Article extends React.Component {
       speed: timer.formatTime(speed),
       rawSpeed: speed,
       readArticle: this.state.currentArticle,
-      readFont: this.state.currentFont
+      readFont: this.state.currentFont,
+      readFontString: typo.fonts[this.state.currentFont]
     }
     this.props.onNext(callback)
   }

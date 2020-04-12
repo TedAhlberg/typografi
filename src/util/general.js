@@ -1,13 +1,22 @@
 const getRandomElementFrom = (array, size) => {
-  console.log("Array: " + array)
   let index = Math.floor(Math.random() * size)
   while (array.includes(index)) {
     index++
     if (index >= size)
       index = 0
   }
-  console.log("index: " + index)
   return index
 }
 
-export default {getRandomElementFrom}
+const getFastestFont = (articleData) => {
+  let fastestFont = Infinity, fontIndex
+  for (var i = 0; i < articleData.length; i++) {
+    if (fastestFont > articleData[i].rawSpeed) {
+      fastestFont = articleData[i].rawSpeed
+      fontIndex = i
+    }
+  }
+  return articleData[fontIndex].readFontString 
+}
+
+export default { getRandomElementFrom, getFastestFont }
