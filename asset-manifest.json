@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/typografi/static/css/main.a49f7168.chunk.css",
-    "main.js": "/typografi/static/js/main.38ca30b6.chunk.js",
-    "main.js.map": "/typografi/static/js/main.38ca30b6.chunk.js.map",
+    "main.js": "/typografi/static/js/main.eae7e561.chunk.js",
+    "main.js.map": "/typografi/static/js/main.eae7e561.chunk.js.map",
     "runtime-main.js": "/typografi/static/js/runtime-main.265ed362.js",
     "runtime-main.js.map": "/typografi/static/js/runtime-main.265ed362.js.map",
-    "static/js/2.d9d5ed2b.chunk.js": "/typografi/static/js/2.d9d5ed2b.chunk.js",
-    "static/js/2.d9d5ed2b.chunk.js.map": "/typografi/static/js/2.d9d5ed2b.chunk.js.map",
+    "static/js/2.77e537f4.chunk.js": "/typografi/static/js/2.77e537f4.chunk.js",
+    "static/js/2.77e537f4.chunk.js.map": "/typografi/static/js/2.77e537f4.chunk.js.map",
     "index.html": "/typografi/index.html",
-    "precache-manifest.287a361790e02c235a324a2aae35e613.js": "/typografi/precache-manifest.287a361790e02c235a324a2aae35e613.js",
+    "precache-manifest.4ac28d67a2e292a2291ab07b0d37ac57.js": "/typografi/precache-manifest.4ac28d67a2e292a2291ab07b0d37ac57.js",
     "service-worker.js": "/typografi/service-worker.js",
     "static/css/main.a49f7168.chunk.css.map": "/typografi/static/css/main.a49f7168.chunk.css.map",
-    "static/js/2.d9d5ed2b.chunk.js.LICENSE.txt": "/typografi/static/js/2.d9d5ed2b.chunk.js.LICENSE.txt"
+    "static/js/2.77e537f4.chunk.js.LICENSE.txt": "/typografi/static/js/2.77e537f4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.265ed362.js",
-    "static/js/2.d9d5ed2b.chunk.js",
+    "static/js/2.77e537f4.chunk.js",
     "static/css/main.a49f7168.chunk.css",
-    "static/js/main.38ca30b6.chunk.js"
+    "static/js/main.eae7e561.chunk.js"
   ]
 }
