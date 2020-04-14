@@ -4,8 +4,10 @@ class IntroSurvey extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      screen_width: window.innerWidth,
-      screen_height: window.innerHeight
+      screenWidth: window.innerWidth,
+      screenHeight: window.innerHeight,
+      browserName: navigator.appName,
+      browserPlatform: navigator.platform
     }
   }
 

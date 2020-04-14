@@ -1,6 +1,8 @@
 import React from 'react'
 import './Main.css'
 
+import ProgressBar from './elements/ProgressBar'
+
 import Intro from './pages/Intro'
 import IntroSurvey from './pages/IntroSurvey'
 import Article from './article/Article'
@@ -86,21 +88,24 @@ class Main extends React.Component {
   }
 
   render() {
+    let page = []
     let i = this.state.elementIndex
+    //ProgressBar
+    page.push(<ProgressBar elementIndex={i}/>)
 
     //Intro
     if (i === 0)
-      return (<Intro onNext={this.onNext} />)
+      page.push(<Intro onNext={this.onNext} />)
 
     //Intro Survey  
     if (i === 1)
-      return (<IntroSurvey onNext={this.onNext} />)
+      page.push(<IntroSurvey onNext={this.onNext} />)
 
     //Article  
     if (i > 1 && i < 16) {
       if ((i % 2) === 0) {
         console.log(this.state)
-        return (<div
+        page.push(<div
           onTouchStart={touch.touchStart}
           onTouchMove={touch.touchMove}
           onTouchEnd={touch.touchEnd}>
@@ -115,7 +120,7 @@ class Main extends React.Component {
 
         //Article Survey
       } else {
-        return (
+        page.push (
           <ArticleSurvey
             testType={this.state.testType}
             onNext={this.onNext} />
@@ -125,8 +130,10 @@ class Main extends React.Component {
 
     //Outro
     if (i === 16) {
-      return (<Outro />)
+      page.push(<Outro introSurvey={this.state.introSurvey} />)
     }
+
+    return page
   }
 }
-export default Main;
+export default Main

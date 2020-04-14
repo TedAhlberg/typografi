@@ -3,7 +3,12 @@ import React from 'react'
 class Outro extends React.Component {
   render() {
     return (
-      <h1>outro</h1>
+      <div>
+        <h1>outro</h1>
+        <span>
+          {this.props.introSurvey.browserPlatform}
+        </span>
+      </div>
     )
   }
 }
