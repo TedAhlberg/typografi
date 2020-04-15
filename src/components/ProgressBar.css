@@ -1,7 +1,3 @@
-:root {
-    --progress-bar-width: 0%;
-}
-
 #progress-bar-outline {
     background-color: beige;
     width: 100%;
@@ -10,9 +6,11 @@
 }
 
 #progress-bar-inline {
+    margin: 0;
+    padding: 0;
     background-color: black;
-    width: var(--progress-bar-width);
     transition: width 1.5s;
+    width: 0%;
     height: 4px;
     border-radius: 2px;
 }

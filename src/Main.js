@@ -1,7 +1,7 @@
 import React from 'react'
 import './Main.css'
 
-import ProgressBar from './elements/ProgressBar'
+import ProgressBar from './components/ProgressBar'
 
 import Intro from './pages/Intro'
 import IntroSurvey from './pages/IntroSurvey'
@@ -91,25 +91,36 @@ class Main extends React.Component {
     let page = []
     let i = this.state.elementIndex
     //ProgressBar
-    page.push(<ProgressBar elementIndex={i}/>)
+    page.push(<ProgressBar
+      key={"ProgressBar"}
+      elementIndex={i} />
+    )
 
     //Intro
     if (i === 0)
-      page.push(<Intro onNext={this.onNext} />)
+      page.push(<Intro
+        key={"Intro"}
+        onNext={this.onNext} />
+      )
 
     //Intro Survey  
     if (i === 1)
-      page.push(<IntroSurvey onNext={this.onNext} />)
+      page.push(<IntroSurvey
+        key={"IntroSurvey"}
+        onNext={this.onNext} />
+      )
 
     //Article  
     if (i > 1 && i < 16) {
       if ((i % 2) === 0) {
         console.log(this.state)
         page.push(<div
+          key={"TouchHandler_" + i}
           onTouchStart={touch.touchStart}
           onTouchMove={touch.touchMove}
           onTouchEnd={touch.touchEnd}>
           <Article
+            key={"Article_" + i}
             readArticles={this.state.readArticles}
             readFonts={this.state.readFonts}
             readSizes={this.state.readSizes}
@@ -120,8 +131,9 @@ class Main extends React.Component {
 
         //Article Survey
       } else {
-        page.push (
+        page.push(
           <ArticleSurvey
+            key={"ArticleSurvey_" + i}
             testType={this.state.testType}
             onNext={this.onNext} />
         )
@@ -130,7 +142,10 @@ class Main extends React.Component {
 
     //Outro
     if (i === 16) {
-      page.push(<Outro introSurvey={this.state.introSurvey} />)
+      page.push(<Outro
+        key={"Outro"}
+        introSurvey={this.state.introSurvey} />
+      )
     }
 
     return page
