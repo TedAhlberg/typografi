@@ -3,11 +3,11 @@ import './Main.css'
 
 import ProgressBar from './components/ProgressBar'
 
-import Intro from './pages/Intro'
-import IntroSurvey from './pages/IntroSurvey'
+import Intro from './components/pages/Intro'
+import IntroSurvey from './components/pages/IntroSurvey'
 import Article from './article/Article'
 import ArticleSurvey from './article/ArticleSurvey'
-import Outro from './pages/Outro'
+import Outro from './components/pages/Outro'
 
 import util from './util/general'
 import touch from './util/touch'
