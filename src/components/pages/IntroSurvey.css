@@ -1,0 +1,41 @@
+h1{
+    font-size: 20pt;
+}
+
+span{
+    margin-top: 15px;
+}
+
+input{
+    font-family: 'PT Serif', serif;
+    font-size: 16pt;
+    margin-top: 5px;
+}
+
+input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}
+
+button{
+    margin-top: 40px;
+}
+
+.radioGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.radioChoice{
+    margin-left: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#introSurveyContainer{
+    display: flex;
+    flex-direction: column;
+}
