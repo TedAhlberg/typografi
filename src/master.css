@@ -1,0 +1,22 @@
+body{
+    background-color: #fff9f5;
+    color: #242424;
+    font-family: 'PT Serif', serif;
+    padding: 10px;
+}
+
+h1{
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 24pt;
+}
+
+h2{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 15pt;
+}
+
+p{
+    font-size: 16pt;
+}

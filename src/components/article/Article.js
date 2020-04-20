@@ -1,11 +1,11 @@
 import React from 'react'
 import './Article.css'
 
-import util from '../util/general'
-import timer from '../util/timer'
+import util from '../../util/general'
+import timer from '../../util/timer'
 
-import articles from '../res/articles.json'
-import typo from '../res/typo.json'
+import articles from '../../res/articles.json'
+import typo from '../../res/typo.json'
 
 class Article extends React.Component {
   constructor(props) {

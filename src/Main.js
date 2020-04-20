@@ -1,16 +1,19 @@
 import React from 'react'
 import './Main.css'
+import './master.css'
 
 import ProgressBar from './components/ProgressBar'
 
 import Intro from './components/pages/Intro'
 import IntroSurvey from './components/pages/IntroSurvey'
-import Article from './article/Article'
-import ArticleSurvey from './article/ArticleSurvey'
+import Article from './components/article/Article'
+import ArticleSurvey from './components/article/ArticleSurvey'
 import Outro from './components/pages/Outro'
 
 import util from './util/general'
 import touch from './util/touch'
+
+import typo from './res/typo.json'
 
 class Main extends React.Component {
   constructor(props) {
@@ -90,23 +93,31 @@ class Main extends React.Component {
   render() {
     let page = []
     let i = this.state.elementIndex
+
+    //Fontimport
+    page.push(<link
+      key="FontLink"
+      href={typo.mainFont}
+      rel="stylesheet" />
+    )
+
     //ProgressBar
     page.push(<ProgressBar
-      key={"ProgressBar"}
+      key="ProgressBar"
       elementIndex={i} />
     )
 
     //Intro
     if (i === 0)
       page.push(<Intro
-        key={"Intro"}
+        key="Intro"
         onNext={this.onNext} />
       )
 
     //Intro Survey  
     if (i === 1)
       page.push(<IntroSurvey
-        key={"IntroSurvey"}
+        key="IntroSurvey"
         onNext={this.onNext} />
       )
 
@@ -143,7 +154,7 @@ class Main extends React.Component {
     //Outro
     if (i === 16) {
       page.push(<Outro
-        key={"Outro"}
+        key="Outro"
         introSurvey={this.state.introSurvey} />
       )
     }
