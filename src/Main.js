@@ -92,6 +92,7 @@ class Main extends React.Component {
   render() {
     let page = []
     let i = this.state.elementIndex
+    let readArticles = this.state.readArticles
 
     //Fontimport
     page.push(<link
@@ -145,6 +146,7 @@ class Main extends React.Component {
           <ArticleSurvey
             key={"ArticleSurvey_" + i}
             testType={this.state.testType}
+            currentArticle={readArticles[readArticles.length - 1]}
             onNext={this.onNext} />
         )
       }

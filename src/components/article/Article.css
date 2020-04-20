@@ -1,6 +1,14 @@
-:root{
+:root {
     --main-article-font: ;
     --main-article-size: 16pt;
+}
+
+h1 {
+    font-size: 20pt;
+}
+
+p {
+    margin-top: 25px;
 }
 
 .article {

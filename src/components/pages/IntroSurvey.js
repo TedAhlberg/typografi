@@ -27,7 +27,7 @@ class IntroSurvey extends React.Component {
 
   render() {
     return (
-      <div id="introSurveyContainer">
+      <div id="surveyContainer">
         <h1>Inledande enkät</h1>
 
         <span>Hur gammal är du?</span>
@@ -80,7 +80,7 @@ class IntroSurvey extends React.Component {
           </div>
         </div>
 
-        <span>Vilket format läser du mest av?</span>
+        <span>Vilket format av text läser du mest av?</span>
         <div className="radioGroup">
           <div className="radioChoiceContainer">
             <input type="radio" name="rg2" value="1"
