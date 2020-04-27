@@ -1,6 +1,9 @@
 import React from 'react'
 import articles from './../../res/articles.json'
 
+const VALID_INPUT = "#242424"
+const INVALID_INPUT = "#c25050"
+
 class ArticleSurvey extends React.Component {
   constructor(props) {
     super(props)
@@ -8,11 +11,31 @@ class ArticleSurvey extends React.Component {
   }
 
   checkAnswers = () => {
-    
+    console.log()
+    let rgs = [
+      this.state.rg1,
+      this.state.rg2,
+      this.state.rg3,
+    ]
+    for (var i = 0; i < rgs.length; i++) {
+      let id = "Rg" + (i + 1)
+      if (rgs[i] === undefined) {
+        document.getElementById("a" + id)
+          .style.color = INVALID_INPUT
+        this.setState({ ["b" + id]: false })
+      } else {
+        document.getElementById("a" + id)
+          .style.color = VALID_INPUT
+        this.setState({ ["b" + id]: true })
+      }
+    }
+
+    return (this.state.rg1 && this.state.rg2 && this.state.rg3)
   }
 
   onNext = () => {
-    this.props.onNext(this.state)
+    if(this.checkAnswers())
+      this.props.onNext(this.state)
   }
 
   handleOptionChange = (changeEvent) => {
@@ -26,7 +49,9 @@ class ArticleSurvey extends React.Component {
 
     let question = (
       <div>
-        <span>{articles[currentArticle].surveyQuestion}</span>
+        <span id="aRg1">
+          {articles[currentArticle].surveyQuestion}
+        </span>
         <div className="radioGroup">
           <div className="radioChoiceContainer">
             <input type="radio" name="rg1" value="1"
@@ -68,9 +93,12 @@ class ArticleSurvey extends React.Component {
         <div id="surveyContainer">
           <h1>Artikelenkät</h1>
           <h2>{articles[currentArticle].title}</h2>
+
           {question}
 
-          <span>Hur estetiskt tilltalande skulle du säga att förra typsnittet var?</span>
+          <span id="aRg2">
+            Hur estetiskt tilltalande skulle du säga att föregånde typsnittet var?
+          </span>
           <div className="radioGroup">
             <div className="radioChoiceContainer">
               <input type="radio" name="rg2" value="1"
@@ -105,7 +133,9 @@ class ArticleSurvey extends React.Component {
             </div>
           </div>
 
-          <span>Hur lättläst skulle du säga att förra typsnittet var?</span>
+          <span id="aRg3">
+            Hur lättläst skulle du säga att föregånde typsnittet var?
+          </span>
           <div className="radioGroup">
             <div className="radioChoiceContainer">
               <input type="radio" name="rg3" value="1"
@@ -140,7 +170,7 @@ class ArticleSurvey extends React.Component {
             </div>
           </div>
 
-          <button onClick={this.props.onNext}>
+          <button onClick={this.onNext}>
             Nästa artikel
           </button>
         </div>
@@ -153,7 +183,9 @@ class ArticleSurvey extends React.Component {
           <h2>{articles[currentArticle].title}</h2>
           {question}
 
-          <span>Hur estetiskt tilltalande skulle du säga att storleken på förra typsnittet var?</span>
+          <span id="aRg2">
+            Hur estetiskt tilltalande skulle du säga att storleken på föregånde typsnittet var?
+          </span>
           <div className="radioGroup">
             <div className="radioChoiceContainer">
               <input type="radio" name="rg2" value="1"
@@ -188,7 +220,9 @@ class ArticleSurvey extends React.Component {
             </div>
           </div>
 
-          <span>Hur lättläst skulle du säga att storleken på förra typsnittet var?</span>
+          <span id="aRg3">
+            Hur lättläst skulle du säga att storleken på föregående typsnittet var?
+          </span>
           <div className="radioGroup">
             <div className="radioChoiceContainer">
               <input type="radio" name="rg3" value="1"
@@ -223,7 +257,7 @@ class ArticleSurvey extends React.Component {
             </div>
           </div>
 
-          <button onClick={this.props.onNext}>
+          <button onClick={this.onNext}>
             Nästa artikel
           </button>
         </div>

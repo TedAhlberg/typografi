@@ -11,12 +11,7 @@ class IntroSurvey extends React.Component {
       screenWidth: window.innerWidth,
       screenHeight: window.innerHeight,
       browserName: navigator.appName,
-      browserPlatform: navigator.platform,
-
-      bAge: true,
-      bRg1: true,
-      bRg2: true,
-      clickedNext: false
+      browserPlatform: navigator.platform
     }
   }
 
@@ -54,13 +49,10 @@ class IntroSurvey extends React.Component {
       }
     }
 
-    if (this.state.age && this.state.rg1 && this.state.rg2)
-      return true
+    return (this.state.age && this.state.rg1 && this.state.rg2)
   }
 
   onNext = () => {
-    console.log(this.state)
-    this.setState({ clickedNext: true })
     if (this.checkAnswers())
       this.props.onNext(this.state)
   }
