@@ -32,6 +32,7 @@ class Main extends React.Component {
 
   onNext = (callback) => {
     var i = this.state.elementIndex
+    window.scrollTo(0, 0)
 
     if (i <= 1) {
       this.setState({ introSurvey: callback })

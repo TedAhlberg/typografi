@@ -4,6 +4,7 @@ h1{
 
 span{
     margin-top: 15px;
+    transition: color 0.5s;
 }
 
 input{

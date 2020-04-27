@@ -1,6 +1,9 @@
 import React from 'react'
 import './IntroSurvey.css'
 
+const VALID_INPUT = "#242424"
+const INVALID_INPUT = "#c25050"
+
 class IntroSurvey extends React.Component {
   constructor(props) {
     super(props)
@@ -8,12 +11,58 @@ class IntroSurvey extends React.Component {
       screenWidth: window.innerWidth,
       screenHeight: window.innerHeight,
       browserName: navigator.appName,
-      browserPlatform: navigator.platform
+      browserPlatform: navigator.platform,
+
+      bAge: true,
+      bRg1: true,
+      bRg2: true,
+      clickedNext: false
     }
   }
 
+  checkAnswers = () => {
+    //age
+    let age = this.state.age
+    if (age === undefined || 
+        age === "" || 
+        age < 0 || 
+        age > 110) {
+      document.getElementById("isAge")
+        .style.color = INVALID_INPUT
+      this.setState({ bAge: false })
+    } else {
+      document.getElementById("isAge")
+        .style.color = VALID_INPUT
+      this.setState({ bAge: true })
+    }
+
+    //rg1 & rg2
+    let rgs = [
+      this.state.rg1,
+      this.state.rg2
+    ]
+    for (var i = 0; i < rgs.length; i++) {
+      let id = "Rg" + (i + 1)
+      if (rgs[i] === undefined) {
+        document.getElementById("is" + id)
+          .style.color = INVALID_INPUT
+        this.setState({ ["b" + id]: false })
+      } else {
+        document.getElementById("is" + id)
+          .style.color = VALID_INPUT
+        this.setState({ ["b" + id]: false })
+      }
+    }
+
+    if (this.state.age && this.state.rg1 && this.state.rg2)
+      return true
+  }
+
   onNext = () => {
-    this.props.onNext(this.state)
+    console.log(this.state)
+    this.setState({ clickedNext: true })
+    if (this.checkAnswers())
+      this.props.onNext(this.state)
   }
 
   handleOptionChange = (changeEvent) => {
@@ -22,7 +71,7 @@ class IntroSurvey extends React.Component {
   }
 
   handleNumberChange = (numberEvent) => {
-    this.setState({ number: numberEvent.target.value.replace(/\D/, '') })
+    this.setState({ age: numberEvent.target.value.replace(/\D/, '') })
   }
 
   render() {
@@ -30,12 +79,16 @@ class IntroSurvey extends React.Component {
       <div id="surveyContainer">
         <h1>Inledande enkät</h1>
 
-        <span>Hur gammal är du?</span>
+        <span id="isAge">
+          Hur gammal är du?
+        </span>
         <input type="text"
           value={this.state.number}
           onChange={this.handleNumberChange} />
 
-        <span>Hur mycket läser du under en vecka?</span>
+        <span id="isRg1">
+          Hur mycket läser du under en vecka?
+        </span>
         <div className="radioGroup">
           <div className="radioChoiceContainer">
             <input type="radio" name="rg1" value="1"
@@ -80,7 +133,9 @@ class IntroSurvey extends React.Component {
           </div>
         </div>
 
-        <span>Vilket format av text läser du mest av?</span>
+        <span id="isRg2">
+          Vilket format av text läser du mest av?
+        </span>
         <div className="radioGroup">
           <div className="radioChoiceContainer">
             <input type="radio" name="rg2" value="1"

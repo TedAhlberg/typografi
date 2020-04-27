@@ -7,6 +7,10 @@ class ArticleSurvey extends React.Component {
     this.state = {}
   }
 
+  checkAnswers = () => {
+    
+  }
+
   onNext = () => {
     this.props.onNext(this.state)
   }
