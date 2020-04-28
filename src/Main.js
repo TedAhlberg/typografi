@@ -38,7 +38,7 @@ class Main extends React.Component {
       this.setState({ introSurvey: callback })
     }
 
-    if (i > 1 && i < 15) {
+    if (i > 1 && i < 16) {
       if (i >= 8 && this.state.testType === "font") {
         this.setState({
           fastestFont: util.getFastestFont(this.state.articleData),
@@ -157,7 +157,7 @@ class Main extends React.Component {
     if (i === 16) {
       page.push(<Outro
         key="Outro"
-        introSurvey={this.state.introSurvey} />
+        mainState={this.state} />
       )
     }
 
