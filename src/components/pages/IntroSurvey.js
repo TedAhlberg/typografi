@@ -53,7 +53,7 @@ class IntroSurvey extends React.Component {
   }
 
   onNext = () => {
-    // Ta bort innan deploy
+    // uncomment before deploy
     // if (this.checkAnswers())
       this.props.onNext(this.state)
   }
