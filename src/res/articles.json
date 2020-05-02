@@ -55,11 +55,11 @@
     "title": "Första grodan hittad på Antarktis",
     "text": [
         "Två små fossilerade ben, ett från skallen och ett höftben visar nu för första gången att det har funnits grodor på Antarktis. De levde för 40 miljoner år sedan i ett klimat som var mycket varmare än vad det är idag.",
-        "– Det är två pyttesmå benbitar av en groda, och det visar att grodor har funnits på jordens alla kontinenter, säger Thomas Mörs som är paleontolog vid Naturhistoriska riksmuseet.",
+        "- Det är två pyttesmå benbitar av en groda, och det visar att grodor har funnits på jordens alla kontinenter, säger Thomas Mörs som är paleontolog vid Naturhistoriska riksmuseet.",
         "Thomas Mörs gjorde upptäckten tillsammans med en grupp argentinska och schweiziska paleontologer på den antarktiska ön Seymour och de presenterar sina resultat i veckans Scientific Reports.",
         "Grodan tillhör familjen Calyptocephalellidae och har sina närmaste nu levande släktingar i de chilenska Anderna. Där är det nu ungefär samma klimat som det var på den ön Seymour för 40 miljoner år sedan. Under den kallaste månaden var det då i genomsnitt 4 grader varmt och under den varmaste 14 grader varmt.",
         "Dessutom har grodan också nu levande släktingar i Australien.",
-        " – För 40 miljoner år sedan var Antarktis en del av kontinenten Gondwana som då bestod av Sydamerika, Antarktis och Australien, säger Thomas Mörs."
+        "- För 40 miljoner år sedan var Antarktis en del av kontinenten Gondwana som då bestod av Sydamerika, Antarktis och Australien, säger Thomas Mörs."
     ],
     "lix": 51,
     "surveyQuestion": "Vilket djur var det de fossiliserade benen hade tillhört?",
@@ -70,54 +70,58 @@
         "Fågel"
     ]
 }, {
-    "title": "Artikel 5",
+    "title": "Efterfrågan på batterier kommer tiodubblas",
     "text": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et. Viverra justo nec ultrices dui sapien eget mi proin sed. Eu ultrices vitae auctor eu augue ut lectus. Sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Consequat ac felis donec et odio pellentesque diam volutpat. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Turpis in eu mi bibendum neque. Ac felis donec et odio pellentesque. Sed risus pretium quam vulputate. Aliquet bibendum enim facilisis gravida. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Elementum nibh tellus molestie nunc. Luctus accumsan tortor posuere ac ut consequat. Netus et malesuada fames ac turpis egestas integer. Pellentesque nec nam aliquam sem et. Dictum fusce ut placerat orci nulla pellentesque.",
-        "Vitae ultricies leo integer malesuada nunc. Molestie nunc non blandit massa. Tortor id aliquet lectus proin nibh nisl condimentum. Duis at tellus at urna condimentum mattis pellentesque id nibh. Tincidunt arcu non sodales neque sodales ut. Massa sapien faucibus et molestie ac. Sit amet aliquam id diam maecenas ultricies mi eget. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Turpis tincidunt id aliquet risus feugiat in ante. Eget nulla facilisi etiam dignissim. Fames ac turpis egestas integer.",
-        "Donec ac odio tempor orci dapibus ultrices in. Sed enim ut sem viverra aliquet eget sit. Auctor elit sed vulputate mi sit. Nulla aliquet enim tortor at. Nisl condimentum id venenatis a condimentum. Ante metus dictum at tempor commodo ullamcorper a. Vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt. Turpis egestas integer eget aliquet nibh praesent tristique magna sit. Posuere lorem ipsum dolor sit. Feugiat pretium nibh ipsum consequat nisl.",
-        "Justo nec ultrices dui sapien eget mi proin sed libero. Eget mi proin sed libero. At erat pellentesque adipiscing commodo elit. Nec feugiat nisl pretium fusce id velit ut tortor. Scelerisque varius morbi enim nunc. Eu feugiat pretium nibh ipsum consequat nisl vel pretium. Fermentum et sollicitudin ac orci phasellus. Nibh nisl condimentum id venenatis a condimentum vitae sapien. Condimentum lacinia quis vel eros donec ac odio tempor. Faucibus et molestie ac feugiat. Egestas fringilla phasellus faucibus scelerisque eleifend. Libero enim sed faucibus turpis in. Cursus turpis massa tincidunt dui ut. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique. Odio ut enim blandit volutpat maecenas volutpat blandit. Et tortor consequat id porta nibh. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Quam vulputate dignissim suspendisse in. Turpis massa sed elementum tempus egestas sed sed risus.",
-        "At tempor commodo ullamcorper a lacus vestibulum. Vitae semper quis lectus nulla. Amet facilisis magna etiam tempor orci eu. Etiam non quam lacus suspendisse faucibus interdum posuere. Eget nunc lobortis mattis aliquam faucibus purus in. Vitae ultricies leo integer malesuada. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Sem nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Ut etiam sit amet nisl purus in. Mattis aliquam faucibus purus in massa tempor. Velit scelerisque in dictum non consectetur. Interdum velit laoreet id donec ultrices tincidunt arcu non. Ut venenatis tellus in metus vulputate eu scelerisque felis. Fermentum et sollicitudin ac orci phasellus."
+        "I västvärlden pågår just nu en omvälvande förändring med mycket mer sol- och vindkraft i systemen. Det ökar också behovet av lagring. I Sverige satsar man både på traditionella litiumjonbatterier och på vätgas. ",
+        "En ny rapport förutspår en tiodubblad ökning på efterfrågan av litiumjonbatterier till år 2030. ",
+        "- Idag är behovet på cirka 200 gigawattimmar, men om 10 år kommer det ligga på cirka 3 000 gigawattimmar, säger Peter Carlsson, vd på företaget Northvolt som bygger en jättefabrik utanför Skellefteå.",
+        "Övergången till förnybara elkällor ställer högre krav på batterierna.",
+        "Vattenfall driver till exempel ett projekt i Wales i Storbritannien där man använder batterier för att hålla jämn spänning och frekvens från en vindkraftpark.",
+        "Men lagret klarar bara att buffra el under mycket korta perioder.",
+        "- Det är stötar på sekunder och minuter som möter små förändringar i nätet i stället för att man ska behöva dra på effekt i ett kolkraftverk, som de fortfarande använder i Storbritannien, säger Sandra Grauers Nilsson."
     ],
     "lix": 50,
-    "surveyQuestion": "",
+    "surveyQuestion": "Hur många gigawattimmar uppskattades behovet av lagrad el att vara om 10 år?",
     "surveyAnswers": [
-        "",
-        "",
-        "",
-        ""
+        "500",
+        "1000",
+        "3000",
+        "5000"
     ]
 }, {
-    "title": "Artikel 6",
+    "title": "Ny kärnkraft kan ge el i tusentals år",
     "text": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et. Viverra justo nec ultrices dui sapien eget mi proin sed. Eu ultrices vitae auctor eu augue ut lectus. Sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Consequat ac felis donec et odio pellentesque diam volutpat. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Turpis in eu mi bibendum neque. Ac felis donec et odio pellentesque. Sed risus pretium quam vulputate. Aliquet bibendum enim facilisis gravida. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Elementum nibh tellus molestie nunc. Luctus accumsan tortor posuere ac ut consequat. Netus et malesuada fames ac turpis egestas integer. Pellentesque nec nam aliquam sem et. Dictum fusce ut placerat orci nulla pellentesque.",
-        "Vitae ultricies leo integer malesuada nunc. Molestie nunc non blandit massa. Tortor id aliquet lectus proin nibh nisl condimentum. Duis at tellus at urna condimentum mattis pellentesque id nibh. Tincidunt arcu non sodales neque sodales ut. Massa sapien faucibus et molestie ac. Sit amet aliquam id diam maecenas ultricies mi eget. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Turpis tincidunt id aliquet risus feugiat in ante. Eget nulla facilisi etiam dignissim. Fames ac turpis egestas integer.",
-        "Donec ac odio tempor orci dapibus ultrices in. Sed enim ut sem viverra aliquet eget sit. Auctor elit sed vulputate mi sit. Nulla aliquet enim tortor at. Nisl condimentum id venenatis a condimentum. Ante metus dictum at tempor commodo ullamcorper a. Vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt. Turpis egestas integer eget aliquet nibh praesent tristique magna sit. Posuere lorem ipsum dolor sit. Feugiat pretium nibh ipsum consequat nisl.",
-        "Justo nec ultrices dui sapien eget mi proin sed libero. Eget mi proin sed libero. At erat pellentesque adipiscing commodo elit. Nec feugiat nisl pretium fusce id velit ut tortor. Scelerisque varius morbi enim nunc. Eu feugiat pretium nibh ipsum consequat nisl vel pretium. Fermentum et sollicitudin ac orci phasellus. Nibh nisl condimentum id venenatis a condimentum vitae sapien. Condimentum lacinia quis vel eros donec ac odio tempor. Faucibus et molestie ac feugiat. Egestas fringilla phasellus faucibus scelerisque eleifend. Libero enim sed faucibus turpis in. Cursus turpis massa tincidunt dui ut. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique. Odio ut enim blandit volutpat maecenas volutpat blandit. Et tortor consequat id porta nibh. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Quam vulputate dignissim suspendisse in. Turpis massa sed elementum tempus egestas sed sed risus.",
-        "At tempor commodo ullamcorper a lacus vestibulum. Vitae semper quis lectus nulla. Amet facilisis magna etiam tempor orci eu. Etiam non quam lacus suspendisse faucibus interdum posuere. Eget nunc lobortis mattis aliquam faucibus purus in. Vitae ultricies leo integer malesuada. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Sem nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Ut etiam sit amet nisl purus in. Mattis aliquam faucibus purus in massa tempor. Velit scelerisque in dictum non consectetur. Interdum velit laoreet id donec ultrices tincidunt arcu non. Ut venenatis tellus in metus vulputate eu scelerisque felis. Fermentum et sollicitudin ac orci phasellus."
+        "På Chalmers tekniska högskola i Göteborg forskar kärnkemister på hur man kan göra nytt bränsle från använt kärnavfall. Atomsoporna består av tunga och radioaktiva ämnen som plutonium, americium, curium och neptunium.",
+        "- Vi vill ta den här högen som fortfarande är klyvbar och göra nytt bränsle av det. Det kommer inte att vara möjligt att bli helt självförsörjande men vi kan köra i rätt många tusen år, säger Christian Ekberg som är professor vid institutionen för kärnkemi i Göteborg.",
+        "Han håller upp en liten uranpellet i sin hand.",
+        "- Som man kör kärnkraften idag kan man få lika mycket energi ur den här som om man skulle elda 800 liter olja. Men om vi skulle köra generation-fyra system skulle vi kunna utvinna motsvarande 64 000 liter olja, säger Christian Ekberg.",
+        "Det är bara några procent av uranet i pelleten som blir energi och en stor del omvandlas till tunga och radioaktiva ämnen som plutonium.",
+        "I dag förvaras det svenska kärnavfallet i mellanlagringen i Oskarshamn i väntan på att slutförvaras i urberget utanför Forsmark. Om vi bygger ut den fjärde generationens kärnkraft kan avfallet i stället bli bränsle."
     ],
     "lix": 50,
-    "surveyQuestion": "",
+    "surveyQuestion": "Från vilket lärosäte kommer de kärnkemisterna som nämns i artikeln?",
     "surveyAnswers": [
-        "",
-        "",
-        "",
-        ""
+        "Chalmers Tekniska Högskola",
+        "Lunds Tekniska Högskola",
+        "Kungliga Tekniska Högskolan",
+        "Luleå Tekniska Universitet"
     ]
 }, {
-    "title": "Artikel 7",
+    "title": "Klimatforskare: 2020 kan bli varmaste året som uppmätts",
     "text": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et. Viverra justo nec ultrices dui sapien eget mi proin sed. Eu ultrices vitae auctor eu augue ut lectus. Sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Consequat ac felis donec et odio pellentesque diam volutpat. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Turpis in eu mi bibendum neque. Ac felis donec et odio pellentesque. Sed risus pretium quam vulputate. Aliquet bibendum enim facilisis gravida. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Elementum nibh tellus molestie nunc. Luctus accumsan tortor posuere ac ut consequat. Netus et malesuada fames ac turpis egestas integer. Pellentesque nec nam aliquam sem et. Dictum fusce ut placerat orci nulla pellentesque.",
-        "Vitae ultricies leo integer malesuada nunc. Molestie nunc non blandit massa. Tortor id aliquet lectus proin nibh nisl condimentum. Duis at tellus at urna condimentum mattis pellentesque id nibh. Tincidunt arcu non sodales neque sodales ut. Massa sapien faucibus et molestie ac. Sit amet aliquam id diam maecenas ultricies mi eget. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Turpis tincidunt id aliquet risus feugiat in ante. Eget nulla facilisi etiam dignissim. Fames ac turpis egestas integer.",
-        "Donec ac odio tempor orci dapibus ultrices in. Sed enim ut sem viverra aliquet eget sit. Auctor elit sed vulputate mi sit. Nulla aliquet enim tortor at. Nisl condimentum id venenatis a condimentum. Ante metus dictum at tempor commodo ullamcorper a. Vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt. Turpis egestas integer eget aliquet nibh praesent tristique magna sit. Posuere lorem ipsum dolor sit. Feugiat pretium nibh ipsum consequat nisl.",
-        "Justo nec ultrices dui sapien eget mi proin sed libero. Eget mi proin sed libero. At erat pellentesque adipiscing commodo elit. Nec feugiat nisl pretium fusce id velit ut tortor. Scelerisque varius morbi enim nunc. Eu feugiat pretium nibh ipsum consequat nisl vel pretium. Fermentum et sollicitudin ac orci phasellus. Nibh nisl condimentum id venenatis a condimentum vitae sapien. Condimentum lacinia quis vel eros donec ac odio tempor. Faucibus et molestie ac feugiat. Egestas fringilla phasellus faucibus scelerisque eleifend. Libero enim sed faucibus turpis in. Cursus turpis massa tincidunt dui ut. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique. Odio ut enim blandit volutpat maecenas volutpat blandit. Et tortor consequat id porta nibh. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Quam vulputate dignissim suspendisse in. Turpis massa sed elementum tempus egestas sed sed risus.",
-        "At tempor commodo ullamcorper a lacus vestibulum. Vitae semper quis lectus nulla. Amet facilisis magna etiam tempor orci eu. Etiam non quam lacus suspendisse faucibus interdum posuere. Eget nunc lobortis mattis aliquam faucibus purus in. Vitae ultricies leo integer malesuada. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Sem nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Ut etiam sit amet nisl purus in. Mattis aliquam faucibus purus in massa tempor. Velit scelerisque in dictum non consectetur. Interdum velit laoreet id donec ultrices tincidunt arcu non. Ut venenatis tellus in metus vulputate eu scelerisque felis. Fermentum et sollicitudin ac orci phasellus."
+        "Trots att utsläppen har minskat till följd av coronapandemin stoppas inte den globala uppvärmningen. Klimatforskare förutser att 2020 kan bli det varmaste året hittills uppmätt.",
+        "2019 var globalt sett det näst varmaste året sedan temperaturmätningarna startade. Medeltemperaturen var bara 0,04 grader kallare än rekordåret 2016. Nu pekar klimatforskare på att 2020 kan komma att slå det rekordet, rapporterar The Guardian.",
+        "Baserat på observerade variationer från tidigare år har forskare där nu räknat ut att det är 75 procents sannolikhet att 2020 blir det varmaste året någonsin.",
+        "Enligt klimatforskare vid NASA:s Goddard Institute for Space Studies i New York är sannolikheten 60 procent, medan brittiska meteorologiska institutet The Met Office är försiktigare och räknar med 50 procents risk för ett rekordår.",
+        "Erik Kjellström, professor i klimatologi vid SMHI, är inte förvånad.",
+        "- Det har varit några riktigt varma månader i början av året, vilket gör att 2020 mycket möjligt kan bli det varmaste året vi har observerat. Det följer väl den långsiktiga utvecklingen. Jag skulle bli mycket mer förvånad om det blir ett kallt år, säger han."   
     ],
-    "lix": 50,
-    "surveyQuestion": "",
+    "lix": 46,
+    "surveyQuestion": "Vilket är det hittills dokumenterade varmaste året?",
     "surveyAnswers": [
-        "",
-        "",
-        "",
-        ""
+        "2005",
+        "2010",
+        "2016",
+        "2019"
     ]
 }]
