@@ -35,7 +35,7 @@ class ArticleSurvey extends React.Component {
 
   onNext = () => {
     // uncomment before deploy
-    // if(this.checkAnswers())
+    if(this.checkAnswers())
       this.props.onNext(this.state)
   }
 

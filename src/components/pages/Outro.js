@@ -13,7 +13,7 @@ class Outro extends React.Component {
     let res = paramTemplate.get(this.props.mainState)
     console.log(res)
     // uncomment before deploy
-    // emailjs.send(SERVICE_ID, TEMPLATE_ID, res, USER_ID)
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, res, USER_ID)
   }
 
   render() {

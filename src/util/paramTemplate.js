@@ -1,6 +1,10 @@
 const get = (state) => {
   let res = {
     //Intro Survey
+    "age": JSON.stringify(state.introSurvey.age),
+    "rg1": JSON.stringify(state.introSurvey.rg1),
+    "rg2": JSON.stringify(state.introSurvey.rg2),
+
     "screenWidth": JSON.stringify(state.introSurvey.screenWidth),
     "screenHeight": JSON.stringify(state.introSurvey.screenHeight),
     "browserName": JSON.stringify(state.introSurvey.browserName),
