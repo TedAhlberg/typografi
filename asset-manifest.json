@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/typografi/static/css/main.656ec31c.chunk.css",
-    "main.js": "/typografi/static/js/main.8a515113.chunk.js",
-    "main.js.map": "/typografi/static/js/main.8a515113.chunk.js.map",
+    "main.js": "/typografi/static/js/main.cdda77ba.chunk.js",
+    "main.js.map": "/typografi/static/js/main.cdda77ba.chunk.js.map",
     "runtime-main.js": "/typografi/static/js/runtime-main.265ed362.js",
     "runtime-main.js.map": "/typografi/static/js/runtime-main.265ed362.js.map",
     "static/js/2.c058ed83.chunk.js": "/typografi/static/js/2.c058ed83.chunk.js",
     "static/js/2.c058ed83.chunk.js.map": "/typografi/static/js/2.c058ed83.chunk.js.map",
     "index.html": "/typografi/index.html",
-    "precache-manifest.496883c176da05bec153348aae9c407d.js": "/typografi/precache-manifest.496883c176da05bec153348aae9c407d.js",
+    "precache-manifest.e66d0feaa7d7b388a2d47204905dcd73.js": "/typografi/precache-manifest.e66d0feaa7d7b388a2d47204905dcd73.js",
     "service-worker.js": "/typografi/service-worker.js",
     "static/css/main.656ec31c.chunk.css.map": "/typografi/static/css/main.656ec31c.chunk.css.map",
     "static/js/2.c058ed83.chunk.js.LICENSE.txt": "/typografi/static/js/2.c058ed83.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.265ed362.js",
     "static/js/2.c058ed83.chunk.js",
     "static/css/main.656ec31c.chunk.css",
-    "static/js/main.8a515113.chunk.js"
+    "static/js/main.cdda77ba.chunk.js"
   ]
 }
