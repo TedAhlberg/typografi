@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6b3b0c657a046a71569ca51ebd666583",
+    "revision": "3c7e6e567b6fd8f880c94d06a8f098ee",
     "url": "/typografi/index.html"
   },
   {
-    "revision": "8d0dd804de013ed06ac3",
+    "revision": "abab9523865bce8d3cd1",
     "url": "/typografi/static/css/main.656ec31c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/typografi/static/js/2.200c717b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8d0dd804de013ed06ac3",
-    "url": "/typografi/static/js/main.88cdfc82.chunk.js"
+    "revision": "abab9523865bce8d3cd1",
+    "url": "/typografi/static/js/main.b6a67fff.chunk.js"
   },
   {
     "revision": "0ecd9be44f2e169ff82f",
