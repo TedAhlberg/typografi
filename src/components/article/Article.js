@@ -14,7 +14,8 @@ class Article extends React.Component {
       this.state = {
         currentArticle: this.getCurrentArticle(),
         currentFont: this.getCurrentFont(),
-        currentSize: typo.defaultSize
+        currentSize: typo.defaultSize,
+        startTime: timer.start()
       }
     }
 
@@ -23,6 +24,7 @@ class Article extends React.Component {
         currentArticle: this.getCurrentArticle(),
         currentFont: this.props.fastestFont,
         currentSize: this.getCurrentSize(),
+        startTime: timer.start()
       }
       console.log("size: " + typo.sizes[this.state.currentSize])
       document.documentElement.style.setProperty(
@@ -30,14 +32,11 @@ class Article extends React.Component {
         typo.sizes[this.state.currentSize]
       )
     }
-
     
     document.documentElement.style.setProperty(
       '--main-article-font',
       typo.fonts[this.state.currentFont]
     )
-
-    timer.start()
 
     //debug
     let log = {
@@ -79,11 +78,15 @@ class Article extends React.Component {
   }
 
   onNext = () => {
-    let speed = timer.stop()
+    let endTime = timer.stop()
+    let speed = timer.speed()
 
     let callback = {
+      startTime: this.state.startTime,
+      endTime: endTime,
       speed: timer.formatTime(speed),
       rawSpeed: speed,
+
       readArticle: this.state.currentArticle,
 
       readFont: this.state.currentFont,

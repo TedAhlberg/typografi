@@ -49,17 +49,19 @@ class Main extends React.Component {
       //Article
       if ((i % 2) === 0) {
         let articleData = {
+          startTime: callback.startTime,
+          endTime: callback.endTime,
           speed: callback.speed,
           rawSpeed: callback.rawSpeed,
-          readArticle: callback.readArticle,
 
+          readArticle: callback.readArticle,
           readFont: callback.readFont,
           readFontString: callback.readFontString,
 
           readSize: callback.readSize,
           readSizeString: callback.readSizeString,
 
-          touch: touch.getArrays(),
+          touch: touch.getArray(),
           testType: this.state.testType
         }
 

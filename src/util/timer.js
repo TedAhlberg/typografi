@@ -3,13 +3,17 @@ var date, startTime, endTime
 const start = () => {
   date = new Date()
   startTime = date.getTime()
+  return startTime
 }
 
 const stop = () => {
   date = new Date()
   endTime = date.getTime()
-  let time = endTime - startTime
-  return time
+  return endTime
+}
+
+const speed = () => {
+  return endTime - startTime
 }
 
 const formatTime = (time) => {
@@ -26,4 +30,4 @@ const formatTime = (time) => {
     s.toString().padStart(2, '0')
   )
 }
-export default { start, stop, formatTime}
+export default { start, stop, speed, formatTime}
