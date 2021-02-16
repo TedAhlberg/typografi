@@ -1,22 +1,32 @@
-var touchEvent = {
-  start: { x: 0, y: 0 },
-  end: { x: 0, y: 0 },
-  time: ""
-}
-var touchArray = [], latestMove = ""
+var touchArray = [],
+  startToEndArray = [],
+  lastTime = 0,
+  latestMove = ""
 
 const touchStart = (event) => {
+  let time = new Date().getTime()
   let start = {
     x: event.touches[0].clientX,
-    y: event.touches[0].clientY
+    y: event.touches[0].clientY,
+    time: time
   }
-  touchArray.push({ start: start })
+  touchArray.push({
+    start: start
+  })
+  lastTime = time
 }
 
 const touchMove = (event) => {
-  latestMove = {
-    x: event.touches[0].clientX,
-    y: event.touches[0].clientY
+  let time = new Date().getTime()
+  if (lastTime + 200 < time) {
+    lastTime = time
+    latestMove = {
+      x: event.touches[0].clientX,
+      y: event.touches[0].clientY
+    }
+
+    startToEndArray.push(latestMove)
+    console.log(latestMove)
   }
 }
 
@@ -24,13 +34,12 @@ const touchEnd = () => {
   if (latestMove !== undefined) {
     let end = {
       x: latestMove.x,
-      y: latestMove.y
+      y: latestMove.y,
+      time: new Date().getTime()
     }
-    let date = new Date()
-    let time = date.getTime()
 
     touchArray[touchArray.length - 1].end = end
-    touchArray[touchArray.length - 1].time = time
+    touchArray[touchArray.length - 1].startToEnd = startToEndArray
   }
 }
 
@@ -40,4 +49,9 @@ const getArray = () => {
   return temp
 }
 
-export default { touchStart, touchMove, touchEnd, getArray }
+export default {
+  touchStart,
+  touchMove,
+  touchEnd,
+  getArray
+}

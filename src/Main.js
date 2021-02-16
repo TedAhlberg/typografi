@@ -61,7 +61,7 @@ class Main extends React.Component {
           readSize: callback.readSize,
           readSizeString: callback.readSizeString,
 
-          touch: touch.getArray(),
+          touchData: touch.getArray(),
           testType: this.state.testType
         }
 
