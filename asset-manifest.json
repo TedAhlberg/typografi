@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/typografi/static/css/main.656ec31c.chunk.css",
-    "main.js": "/typografi/static/js/main.2ef97755.chunk.js",
-    "main.js.map": "/typografi/static/js/main.2ef97755.chunk.js.map",
-    "runtime-main.js": "/typografi/static/js/runtime-main.265ed362.js",
-    "runtime-main.js.map": "/typografi/static/js/runtime-main.265ed362.js.map",
-    "static/js/2.200c717b.chunk.js": "/typografi/static/js/2.200c717b.chunk.js",
-    "static/js/2.200c717b.chunk.js.map": "/typografi/static/js/2.200c717b.chunk.js.map",
+    "main.css": "/typografi/static/css/main.473f4411.chunk.css",
+    "main.js": "/typografi/static/js/main.4db82b59.chunk.js",
+    "main.js.map": "/typografi/static/js/main.4db82b59.chunk.js.map",
+    "runtime-main.js": "/typografi/static/js/runtime-main.53511115.js",
+    "runtime-main.js.map": "/typografi/static/js/runtime-main.53511115.js.map",
+    "static/js/2.62c81796.chunk.js": "/typografi/static/js/2.62c81796.chunk.js",
+    "static/js/2.62c81796.chunk.js.map": "/typografi/static/js/2.62c81796.chunk.js.map",
     "index.html": "/typografi/index.html",
-    "precache-manifest.5963b1971b8156c1e3d0fcc072485faa.js": "/typografi/precache-manifest.5963b1971b8156c1e3d0fcc072485faa.js",
-    "service-worker.js": "/typografi/service-worker.js",
-    "static/css/main.656ec31c.chunk.css.map": "/typografi/static/css/main.656ec31c.chunk.css.map",
-    "static/js/2.200c717b.chunk.js.LICENSE.txt": "/typografi/static/js/2.200c717b.chunk.js.LICENSE.txt"
+    "static/css/main.473f4411.chunk.css.map": "/typografi/static/css/main.473f4411.chunk.css.map",
+    "static/js/2.62c81796.chunk.js.LICENSE.txt": "/typografi/static/js/2.62c81796.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.265ed362.js",
-    "static/js/2.200c717b.chunk.js",
-    "static/css/main.656ec31c.chunk.css",
-    "static/js/main.2ef97755.chunk.js"
+    "static/js/runtime-main.53511115.js",
+    "static/js/2.62c81796.chunk.js",
+    "static/css/main.473f4411.chunk.css",
+    "static/js/main.4db82b59.chunk.js"
   ]
 }
