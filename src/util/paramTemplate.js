@@ -1,23 +1,27 @@
+import date from './date'
+
 const get = (state) => {
   let res = {
-    //Intro Survey
-    "age": JSON.stringify(state.introSurvey.age),
-    "rg1": JSON.stringify(state.introSurvey.rg1),
-    "rg2": JSON.stringify(state.introSurvey.rg2),
+    "_date": date.getDateString(),
 
-    "screenWidth": JSON.stringify(state.introSurvey.screenWidth),
-    "screenHeight": JSON.stringify(state.introSurvey.screenHeight),
-    "browserName": JSON.stringify(state.introSurvey.browserName),
-    "browserPlatform": JSON.stringify(state.introSurvey.browserPlatform),
+    //Intro Survey
+    "age": state.introSurvey.age,
+    "rg1": state.introSurvey.rg1,
+    "rg2": state.introSurvey.rg2,
+
+    "screenWidth": state.introSurvey.screenWidth,
+    "screenHeight": state.introSurvey.screenHeight,
+    "browserName": state.introSurvey.browserName,
+    "browserPlatform": state.introSurvey.browserPlatform,
 
     //Read Articles
-    "readArticles": JSON.stringify(state.readArticles),
+    "readArticles": state.readArticles,
 
     //Read Fonts
-    "readFonts": JSON.stringify(state.readFonts),
+    "readFonts": state.readFonts,
 
     //Read Sizes
-    "readSizes": JSON.stringify(state.readSizes),
+    "readSizes": state.readSizes
   }
 
   //Article Data & Survey Data
