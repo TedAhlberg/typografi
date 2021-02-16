@@ -163,6 +163,12 @@ class Main extends React.Component {
       )
     }
 
+    //Alert when leaving page
+    window.addEventListener('beforeunload', (event) => {
+      event.preventDefault()
+      event.returnValue = '' 
+    })
+
     return page
   }
 }
