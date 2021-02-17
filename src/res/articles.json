@@ -1,55 +1,52 @@
 [{
-    "title": "Mobildata ska hjälpa spåra virusets spridning",
+    "title": "Därför sprider fladdermusen så många virus",
     "text": [
-        "Nu ska smittbärare spåras med hjälp av mobilen. Det är Folkhälsomyndigheten som ska ta hjälp av mobildata för att analysera hur människor har rört sig i Sverige i samband med coronavirusets spridning. Man kommer att få tillgång till informationen från operatören Telia, skriver myndigheten.",
-        "- Det är ganska enkelt egentligen. Vi vill titta på hur man rör sig helt enkelt. Har man minskat sin rörlighet och har man lyssnat på råden, säger statsepidemilog Anders Tegnell på dagens presskonferens.",
-        "Folkhälsomyndigheten (FHM) kommer att hämta in anonymiserad och aggregerad data från Telias mobiltelefonnät för svenska kunder. Det för att studera hur rörelser i befolkningen kopplas till spridningen av covid-19.",
-        "- Det är ett helt anonymt system, vi ser inget på individnivå, betonar Tegnell.",
-        "Uppgifterna kan också användas som underlag för beslut om eventuella åtgärder och för att utvärdera effekten av redan vidtagna åtgärder, så som rekommendationer om att hålla avstånd och att undvika onödiga resor, skriver FHM på sin webbplats.",
-        "Folkhälsomyndigheten kommer att få tillgång till informationen via en anpassning av en kommersiell tjänst som redan erbjuds av Telia."
+        "Corona-, ebola- och rabiesvirus är bara några av de virus som kommer från fladdermöss. Varför sprider just fladdermöss så många virus?",
+        "Fladdermusen, som har levt i ungefär 64 miljoner år, är bland världens äldsta djur. Det kan jämföras med den moderna människan som bara levt i ungefär 200 000 år. De har haft mycket mer tid på sig att utveckla ett immunförsvar som gör att de kan bära på massor av virus utan att bli sjuka, än vad vi människor har.",
+        "Hög ämnesomsättning är en av de egenskaper som tros ligga bakom deras välutvecklade immunsystem, skriver forskare i Nature, som sammanställt forskning på fladdermusens immunförsvar.",
+        "Tidigare forskning visar även att fladdermöss har lägre inflammatorisk aktivitet, och saknar eller har en lägre aktivitet i vissa gener som kopplas till inflammation hos däggdjur. Dessutom har de mer av ett visst protein som reglerar kroppens immunförsvar.",
+        "– Det som gör oss sjuka är ofta effekter av att vårt immunförsvar slår för hårt. Fladdermössens försvar drar på tillräckligt mycket för att viruset inte ska döda djuret men tillräckligt lite för att immunförsvaret inte ska göra dem sjuka, säger Åke Lundkvist, professor i virologi vid Uppsala universitet."
     ],
-    "lix": 50,
-    "surveyQuestion": "Vilken mobiloperatör nämndes i artikeln?",
+    "lix": 47,
+    "surveyQuestion": "Vilket av dessa virus kommer vanligtvis inte från fladdermöss?",
     "surveyAnswers": [
-        "Telenor",
-        "3",
-        "Telia",
-        "Tele2"
+        "Corona",
+        "Ebola",
+        "Rabies",
+        "HIV"
     ]
 }, {
-    "title": "Skånes konsertställen: ”Vi klarar oss någon månad till”",
+    "title": "Spotifys nya patent – vill skräddarsy spellistor genom röstövervakning",
     "text": [
-        "Förbudet mot folksamlingar har tvingat Skånes konsertställen att stänga. Statliga bidrag gör att de största aktörerna överlever några månader till, men inte hur länge som helst.",
-        "Mejeriet, Kulturbolaget i Malmö och The Tivoli i Helsingborg har lyckats boka om merparten av sina konserter och de flesta som köpt biljetter har funnit sig i att arrangemangsdatumen är framflyttade. Men inkomstbortfallet under våren är redan betydande.",
-        "- Som för alla i branschen är det väldigt tufft, säger Hasse Jönsson, artist- och event manager på The Tivoli.",
-        "Även Totte Lundgren har med hjälp av statliga bidrag korttidspermitterat sin fasta personal men har inga jobb att erbjuda frilansande barpersonal och tekniker. Däremot har Kulturbolaget startat en serie streamade konserter som tack vare frivilliga donationer har inbringat en del pengar.",
-        "The Tivoli har ännu inte fått något stöd från staten och tror inte att de klarar sig länge till.",
-        "The Tivoli och Mejeriet har också streamat ett antal konserter och dj-set, Mejeriet utan att be om donationer från publiken."
-    ],
-    "lix": 45,
-    "surveyQuestion": "Vilket av de följande konsertställena har inte fått något bidrag av staten enligt artikeln?",
-    "surveyAnswers": [
-        "Mejeriet",
-        "The Tivoli",
-        "Kulturbolaget",
-        "Babel"
-    ]
-}, {
-    "title": "Trots Rimfrost – antalet skjutningar ökar",
-    "text": [
-        "Antalet skjutningar i Sverige ökar, trots både stora satsningar mot gängvåldet och den pågående coronapandemin.",
-        "En hel del brottslighet har minskat under coronapandemin men de yrkeskriminella tycks fortsätta bedriva verksamhet med oförminskad styrka. Det märks inte minst i polisens statistik över antalet skjutningar.",
-        "Totalt har 15 personer fått sätta livet till i det dödliga skjutvåldet mellan 1 januari och 15 april. Antalet döda ligger på samma nivå som förra året, men både det totala antalet skjutningar, 86 stycken, och antalet skadade, 32, har ökat.",
-        "Skjutningarna har skett under polisens nationella insats mot gängvåldet – Operation Rimfrost. Satsningen, med ökade resurser, syftar till att sätta press på de kriminella för att minska våldet. Men just skjutningarna har alltså inte blivit färre. Trots det menar polisen att insatsen är lyckad och att det hade varit värre utan Rimfrost.",
-        "Genom Operation Rimfrost har polisen genomfört hundratals husrannsakningar och beslagtagit bland annat 545 vapen och 100 kilo sprängmedel fram till den 24 april. Dessutom har över 200 personer häktats för olika typer av brott."
+        "Spotify har registrerat patent för en teknik som ska möjliggöra för musiktjänsten att analysera användarnas röst och bakgrundsljud för att ge bättre musikrekommendationer.",
+        "Intonation, betoning och talrytm är exempel på data som den nya tekniken ska kunna analysera, men även användarens känslomässiga tillstånd, kön, ålder och dialekt ska kunna ge underlag till skräddarsydda musikrekommendationer, skriver Pitchfork.",
+        "Tanken är, enligt patentregistreringen, att i större utsträckning minska användarens behov att fatta medvetna beslut för att välja musik. ”Vad som behövs är ett helt nytt tillvägagångssätt för att samla in användarnas smakpreferenser”, heter det.",
+        "Det står inte klart när, eller om ens om, den nya tekniken ska införas i tjänsten. Det är inte heller ovanligt att techbolag tar patent på teknik som i slutändan inte kommer ut på marknaden.",
+        " – Om de skulle använda patentet på ett sätt som upplevs som integritetskränkande skulle det slå tillbaka mot dem hårt. Trenden bland användare är att bli mer och mer misstänksamma mot vad det stora techjättarna kan få reda på om oss och det är mycket, säger Alexander Norén, SVT:s techkorrespondent."
     ],
     "lix": 49,
-    "surveyQuestion": "Hur många har häktats som påföljd av Operation Rimfrost?",
+    "surveyQuestion": "Vilket är exempel på data som den nya tekniken ska kunna analysera?",
     "surveyAnswers": [
-        "50",
-        "100",
-        "200",
-        "400"
+        "Talrytm",
+        "Puls",
+        "Ögonfärg",
+        "Fingeravtryck"
+    ]
+}, {
+    "title": "Ny forskning: En fjärdedel av jordens arter av bin är försvunna",
+    "text": [
+        "En fjärdedel av jordens kända arter av bin har försvunnit de senaste 20 åren. Ett expanderat jordbruk är en av förklaringarna. ",
+        "Argentinska forskare larmar nu att många bi-arter håller på att försvinna. I en nypublicerad studie har forskarna sammanställt inrapporteringar av observationer av vilda bin runt hela jorden sedan början av 1900-talet. ",
+        "Datan, som finns tillgänglig i ett system som kallas Global biodiversity information facility, visar att 25 procent av alla kända arter med bin inte har synts till sedan 1990-talet. Många av arterna kan ha så få individer kvar att de helt enkelt inte längre observeras. Det gäller bland annat den patagoniska jättehumlan. ",
+        "– Det är en stark varningssignal att vi förlorar våra bin. Förstör vi för bina så förstör vi för oss själva, eftersom de bidrar med pollinering av våra jordbruksgrödor. Försvinner de, tar vi bort möjlighet att odla mat, säger Riccardo Bommarco, professor i lantbruksentomologi vid Sveriges lantbruksuniversitet."
+    ],
+    "lix": 44,
+    "surveyQuestion": "Hur många procent av de kända bi-arterna uppskattas ha försvunnit sedan 1900-talet?",
+    "surveyAnswers": [
+        "15%",
+        "25%",
+        "35%",
+        "45%"
     ]
 }, {
     "title": "Första grodan hittad på Antarktis",
@@ -107,21 +104,20 @@
         "Luleå Tekniska Universitet"
     ]
 }, {
-    "title": "Klimatforskare: 2020 kan bli varmaste året som uppmätts",
+    "title": "Impulsiva människor spenderar mer tid på mobilen",
     "text": [
-        "Trots att utsläppen har minskat till följd av coronapandemin stoppas inte den globala uppvärmningen. Klimatforskare förutser att 2020 kan bli det varmaste året hittills uppmätt.",
-        "2019 var globalt sett det näst varmaste året sedan temperaturmätningarna startade. Medeltemperaturen var bara 0,04 grader kallare än rekordåret 2016. Nu pekar klimatforskare på att 2020 kan komma att slå det rekordet, rapporterar The Guardian.",
-        "Baserat på observerade variationer från tidigare år har forskare där nu räknat ut att det är 75 procents sannolikhet att 2020 blir det varmaste året någonsin.",
-        "Enligt klimatforskare vid NASA:s Goddard Institute for Space Studies i New York är sannolikheten 60 procent, medan brittiska meteorologiska institutet The Met Office är försiktigare och räknar med 50 procents risk för ett rekordår.",
-        "Erik Kjellström, professor i klimatologi vid SMHI, är inte förvånad.",
-        "- Det har varit några riktigt varma månader i början av året, vilket gör att 2020 mycket möjligt kan bli det varmaste året vi har observerat. Det följer väl den långsiktiga utvecklingen. Jag skulle bli mycket mer förvånad om det blir ett kallt år, säger han."   
+       "Nu säger sig tyska forskare kunna visa på vilket sätt som mobilanvändande och beroendeproblematik hänger ihop. En ny studie visar att impulsiva människor som föredrar korta och snabba belöningar lägger mer tid på sociala medier och spel.",
+       "I denna studie analyserade forskare hur 101 personer använt sina mobiltelefoner de senaste sju till tio dagar tillbaka. Genomsnittanvändningen låg på fem till nio timmar om dagen. Och de som föredrog snabba och mindre belöningar använde sociala medier och spel betydligt mer.",
+       "Att vara beroende av mobilen kan likna annan beroendeproblematik där man föredrar snabb belöning trots sämre resultat på sikt.",
+       "Det saknas studier på hur mobilanvändande påverkar människor under längre tid. Men Anders Håkansson tycker inte att man kan skylla allt på mobilerna.",
+       "– Det är inte mediet som är problemet utan det är vad man gör med det. Det hade till exempel varit en annan sak om man suttit och läst en bok på mobilen i flera timmar." 
     ],
-    "lix": 46,
-    "surveyQuestion": "Vilket är det hittills dokumenterade varmaste året?",
+    "lix": 40,
+    "surveyQuestion": "Hur många timmar rapporterade studien att genomsnittsanvändningen mobiltelefoner låg på?",
     "surveyAnswers": [
-        "2005",
-        "2010",
-        "2016",
-        "2019"
+        "2 till 6 timmar",
+        "3 till 7 timmar",
+        "4 till 8 timmar",
+        "5 till 9 timmar"
     ]
 }]
