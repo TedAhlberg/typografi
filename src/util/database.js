@@ -14,7 +14,9 @@ const dbConfig = {
 firebase.initializeApp(dbConfig)
 
 const sendResults = (res) => {
-  firebase.database().ref('test/').push(res)  
+  firebase.database().ref(res._date + "/").push(res)
 }
 
-export default { sendResults }
+export default {
+  sendResults
+}

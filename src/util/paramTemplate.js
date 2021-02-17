@@ -3,6 +3,7 @@ import date from './date'
 const get = (state) => {
   let res = {
     "_date": date.getDateString(),
+    "_time": date.getTimeString(),
 
     //Intro Survey
     "age": state.introSurvey.age,
