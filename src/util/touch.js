@@ -8,6 +8,7 @@ const touchStart = (event) => {
   let start = {
     x: event.touches[0].clientX,
     y: event.touches[0].clientY,
+    scrollY: window.scrollY,
     time: time
   }
   touchArray.push({
@@ -22,7 +23,8 @@ const touchMove = (event) => {
     lastTime = time
     latestMove = {
       x: event.touches[0].clientX,
-      y: event.touches[0].clientY
+      y: event.touches[0].clientY,
+      scrollY: window.scrollY
     }
 
     startToEndArray.push(latestMove)
@@ -35,6 +37,7 @@ const touchEnd = () => {
     let end = {
       x: latestMove.x,
       y: latestMove.y,
+      scrollY: window.scrollY,
       time: new Date().getTime()
     }
 
