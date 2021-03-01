@@ -1,5 +1,5 @@
 #progress-bar-outline {
-    background-color: #f5f0eb;
+    background-color: #F2EDE9;
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -8,7 +8,7 @@
 #progress-bar-inline {
     margin: 0;
     padding: 0;
-    background-color: #e3dfda;
+    background-color: #d1cdc9;
     transition: width 1.5s;
     width: 0%;
     height: 4px;

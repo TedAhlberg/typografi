@@ -1,6 +1,6 @@
 {
     "mainFont": "https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap",
-    "defaultSize": "16pt",
+    "defaultSize": "14pt",
     "fonts": [
         "Times New Roman",
         "Arial",
@@ -8,9 +8,10 @@
         "Goergia"
     ],
     "sizes": [
-        "14pt",
+        "10pt",
         "18pt",
-        "20pt"
+        "22pt"
     ],
     "line-height": "1.5"
 }
+

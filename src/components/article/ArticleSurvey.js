@@ -39,9 +39,19 @@ class ArticleSurvey extends React.Component {
       this.props.onNext(this.state)
   }
 
-  handleOptionChange = (changeEvent) => {
-    let radioGroup = changeEvent.target.name
-    this.setState({ [radioGroup]: changeEvent.target.value })
+  handleOptionChange = (event) => {
+    let tagName = event.target.tagName
+    let target, radioGroup
+
+    if(tagName == "SPAN")
+      target = event.target.previousSibling
+    else if(tagName == "DIV")
+      target = event.target.firstChild
+    else
+      target = event.target
+
+    radioGroup = target.name
+    this.setState({ [radioGroup]: target.value })
   }
 
   render() {
@@ -54,7 +64,8 @@ class ArticleSurvey extends React.Component {
           {articles[currentArticle].surveyQuestion}
         </span>
         <div className="radioGroup">
-          <div className="radioChoiceContainer">
+          <div className="radioChoiceContainer"
+            onClick={this.handleOptionChange}>
             <input type="radio" name="rg1" value="1"
               className="radioChoice"
               checked={this.state.rg1 === "1"}
@@ -62,7 +73,8 @@ class ArticleSurvey extends React.Component {
             <span>{articles[currentArticle].surveyAnswers[0]}</span>
           </div>
 
-          <div className="radioChoiceContainer">
+          <div className="radioChoiceContainer"
+            onClick={this.handleOptionChange}>
             <input type="radio" name="rg1" value="2"
               className="radioChoice"
               checked={this.state.rg1 === "2"}
@@ -70,7 +82,8 @@ class ArticleSurvey extends React.Component {
             <span>{articles[currentArticle].surveyAnswers[1]}</span>
           </div>
 
-          <div className="radioChoiceContainer">
+          <div className="radioChoiceContainer"
+            onClick={this.handleOptionChange}>
             <input type="radio" name="rg1" value="3"
               className="radioChoice"
               checked={this.state.rg1 === "3"}
@@ -78,7 +91,8 @@ class ArticleSurvey extends React.Component {
             <span>{articles[currentArticle].surveyAnswers[2]}</span>
           </div>
 
-          <div className="radioChoiceContainer">
+          <div className="radioChoiceContainer"
+            onClick={this.handleOptionChange}>
             <input type="radio" name="rg1" value="4"
               className="radioChoice"
               checked={this.state.rg1 === "4"}
@@ -101,7 +115,8 @@ class ArticleSurvey extends React.Component {
             Hur estetiskt tilltalande upplevde du föregående typsnitt?
           </span>
           <div className="radioGroup">
-            <div className="radioChoiceContainer">
+            <div className="radioChoiceContainer"
+              onClick={this.handleOptionChange}>
               <input type="radio" name="rg2" value="1"
                 className="radioChoice"
                 checked={this.state.rg2 === "1"}
@@ -109,7 +124,8 @@ class ArticleSurvey extends React.Component {
               <span>Mycket</span>
             </div>
 
-            <div className="radioChoiceContainer">
+            <div className="radioChoiceContainer"
+              onClick={this.handleOptionChange}>
               <input type="radio" name="rg2" value="2"
                 className="radioChoice"
                 checked={this.state.rg2 === "2"}
@@ -117,7 +133,8 @@ class ArticleSurvey extends React.Component {
               <span>Ganska mycket</span>
             </div>
 
-            <div className="radioChoiceContainer">
+            <div className="radioChoiceContainer"
+              onClick={this.handleOptionChange}>
               <input type="radio" name="rg2" value="3"
                 className="radioChoice"
                 checked={this.state.rg2 === "3"}
@@ -125,7 +142,8 @@ class ArticleSurvey extends React.Component {
               <span>Lite grann</span>
             </div>
 
-            <div className="radioChoiceContainer">
+            <div className="radioChoiceContainer"
+              onClick={this.handleOptionChange}>
               <input type="radio" name="rg2" value="4"
                 className="radioChoice"
                 checked={this.state.rg2 === "4"}
@@ -138,7 +156,8 @@ class ArticleSurvey extends React.Component {
             Hur lättläst skulle du säga att föregående typsnitt var?
           </span>
           <div className="radioGroup">
-            <div className="radioChoiceContainer">
+            <div className="radioChoiceContainer"
+              onClick={this.handleOptionChange}>
               <input type="radio" name="rg3" value="1"
                 className="radioChoice"
                 checked={this.state.rg3 === "1"}
@@ -146,7 +165,8 @@ class ArticleSurvey extends React.Component {
               <span>Mycket</span>
             </div>
 
-            <div className="radioChoiceContainer">
+            <div className="radioChoiceContainer"
+              onClick={this.handleOptionChange}>
               <input type="radio" name="rg3" value="2"
                 className="radioChoice"
                 checked={this.state.rg3 === "2"}
@@ -154,7 +174,8 @@ class ArticleSurvey extends React.Component {
               <span>Ganska mycket</span>
             </div>
 
-            <div className="radioChoiceContainer">
+            <div className="radioChoiceContainer"
+              onClick={this.handleOptionChange}>
               <input type="radio" name="rg3" value="3"
                 className="radioChoice"
                 checked={this.state.rg3 === "3"}
@@ -162,7 +183,8 @@ class ArticleSurvey extends React.Component {
               <span>Lite grann</span>
             </div>
 
-            <div className="radioChoiceContainer">
+            <div className="radioChoiceContainer"
+              onClick={this.handleOptionChange}>
               <input type="radio" name="rg3" value="4"
                 className="radioChoice"
                 checked={this.state.rg3 === "4"}
@@ -188,7 +210,8 @@ class ArticleSurvey extends React.Component {
             Hur estetiskt tilltalande upplevde du storleken på föregående typsnitt?
           </span>
           <div className="radioGroup">
-            <div className="radioChoiceContainer">
+            <div className="radioChoiceContainer"
+              onClick={this.handleOptionChange}>
               <input type="radio" name="rg2" value="1"
                 className="radioChoice"
                 checked={this.state.rg2 === "1"}
@@ -196,7 +219,8 @@ class ArticleSurvey extends React.Component {
               <span>Mycket</span>
             </div>
 
-            <div className="radioChoiceContainer">
+            <div className="radioChoiceContainer"
+              onClick={this.handleOptionChange}>
               <input type="radio" name="rg2" value="2"
                 className="radioChoice"
                 checked={this.state.rg2 === "2"}
@@ -204,7 +228,8 @@ class ArticleSurvey extends React.Component {
               <span>Ganska mycket</span>
             </div>
 
-            <div className="radioChoiceContainer">
+            <div className="radioChoiceContainer"
+              onClick={this.handleOptionChange}>
               <input type="radio" name="rg2" value="3"
                 className="radioChoice"
                 checked={this.state.rg2 === "3"}
@@ -212,7 +237,8 @@ class ArticleSurvey extends React.Component {
               <span>Lite grann</span>
             </div>
 
-            <div className="radioChoiceContainer">
+            <div className="radioChoiceContainer"
+              onClick={this.handleOptionChange}>
               <input type="radio" name="rg2" value="4"
                 className="radioChoice"
                 checked={this.state.rg2 === "4"}
@@ -225,7 +251,8 @@ class ArticleSurvey extends React.Component {
             Hur lättläst skulle du säga att storleken på föregående typsnittet var?
           </span>
           <div className="radioGroup">
-            <div className="radioChoiceContainer">
+            <div className="radioChoiceContainer"
+              onClick={this.handleOptionChange}>
               <input type="radio" name="rg3" value="1"
                 className="radioChoice"
                 checked={this.state.rg3 === "1"}
@@ -233,7 +260,8 @@ class ArticleSurvey extends React.Component {
               <span>Mycket</span>
             </div>
 
-            <div className="radioChoiceContainer">
+            <div className="radioChoiceContainer"
+              onClick={this.handleOptionChange}>
               <input type="radio" name="rg3" value="2"
                 className="radioChoice"
                 checked={this.state.rg3 === "2"}
@@ -241,7 +269,8 @@ class ArticleSurvey extends React.Component {
               <span>Ganska mycket</span>
             </div>
 
-            <div className="radioChoiceContainer">
+            <div className="radioChoiceContainer"
+              onClick={this.handleOptionChange}>
               <input type="radio" name="rg3" value="3"
                 className="radioChoice"
                 checked={this.state.rg3 === "3"}
@@ -249,7 +278,8 @@ class ArticleSurvey extends React.Component {
               <span>Lite grann</span>
             </div>
 
-            <div className="radioChoiceContainer">
+            <div className="radioChoiceContainer"
+              onClick={this.handleOptionChange}>
               <input type="radio" name="rg3" value="4"
                 className="radioChoice"
                 checked={this.state.rg3 === "4"}

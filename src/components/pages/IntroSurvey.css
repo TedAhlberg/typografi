@@ -1,9 +1,10 @@
 h1{
     font-size: 20pt;
+    margin-bottom: -5px;
 }
 
 span{
-    margin-top: 15px;
+    margin-top: 30px;
     transition: color 0.5s;
 }
 
@@ -11,4 +12,5 @@ input{
     font-family: 'PT Serif', serif;
     font-size: 16pt;
     margin-top: 5px;
+    max-width: 350px;
 }

@@ -1,10 +1,10 @@
 :root {
     --main-article-font: ;
-    --main-article-size: 16pt;
+    --main-article-size: 14pt;
 }
 
 h1 {
-    font-size: 20pt;
+    font-size: 22pt;
 }
 
 p {
