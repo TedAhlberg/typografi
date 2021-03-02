@@ -100,7 +100,7 @@ class Main extends React.Component {
     //Fontimport
     page.push(<link
       key="FontLink"
-      href={typo.mainFont}
+      href={typo.mainFonts}
       rel="stylesheet" />
     )
 

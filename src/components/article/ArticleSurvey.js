@@ -59,7 +59,7 @@ class ArticleSurvey extends React.Component {
     let currentArticle = this.props.currentArticle
 
     let question = (
-      <div>
+      <div className="surveyQuestion">
         <span id="aRg1">
           {articles[currentArticle].surveyQuestion}
         </span>

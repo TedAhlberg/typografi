@@ -85,7 +85,9 @@ class IntroSurvey extends React.Component {
           <span id="isAge">
             Hur gammal är du?
           </span>
-          <input type="text"
+          <input type='text'
+            inputMode='numeric'
+            pattern="[0-9]*"
             value={this.state.number}
             onChange={this.handleNumberChange} />
 
