@@ -107,7 +107,7 @@ class ArticleSurvey extends React.Component {
       return (
         <div id="surveyContainer">
           <h1>Artikelenkät</h1>
-          <h2>{articles[currentArticle].title}</h2>
+          {/* <h2>{articles[currentArticle].title}</h2> */}
 
           {question}
 
@@ -203,7 +203,7 @@ class ArticleSurvey extends React.Component {
       return (
         <div id="surveyContainer">
           <h1>Artikelenkät</h1>
-          <h2>{articles[currentArticle].title}</h2>
+          {/* <h2>{articles[currentArticle].title}</h2> */}
           {question}
 
           <span id="aRg2">
