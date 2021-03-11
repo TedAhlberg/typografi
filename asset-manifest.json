@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/typografi/static/css/main.303ba1e4.chunk.css",
-    "main.js": "/typografi/static/js/main.9f63349d.chunk.js",
-    "main.js.map": "/typografi/static/js/main.9f63349d.chunk.js.map",
+    "main.js": "/typografi/static/js/main.88d91038.chunk.js",
+    "main.js.map": "/typografi/static/js/main.88d91038.chunk.js.map",
     "runtime-main.js": "/typografi/static/js/runtime-main.53511115.js",
     "runtime-main.js.map": "/typografi/static/js/runtime-main.53511115.js.map",
     "static/js/2.62c81796.chunk.js": "/typografi/static/js/2.62c81796.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.53511115.js",
     "static/js/2.62c81796.chunk.js",
     "static/css/main.303ba1e4.chunk.css",
-    "static/js/main.9f63349d.chunk.js"
+    "static/js/main.88d91038.chunk.js"
   ]
 }
