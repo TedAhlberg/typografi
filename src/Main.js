@@ -62,6 +62,7 @@ class Main extends React.Component {
           readSizeString: callback.readSizeString,
 
           touchData: touch.getArray(),
+          zoomData: touch.getZoomArray(),
           testType: this.state.testType
         }
 
@@ -150,6 +151,8 @@ class Main extends React.Component {
             key={"ArticleSurvey_" + i}
             testType={this.state.testType}
             currentArticle={readArticles[readArticles.length - 1]}
+            //zoom-test
+            zoomTest={this.state.articleData[0].zoomData}
             onNext={this.onNext} />
         )
       }
@@ -157,17 +160,23 @@ class Main extends React.Component {
 
     //Outro
     if (i === 16) {
+      window.removeEventListener('beforeunload', this.preventDefault, true)
+
       page.push(<Outro
         key="Outro"
         mainState={this.state} />
       )
     }
-
+    
     //Alert when leaving page
-    window.addEventListener('beforeunload', (event) => {
+    if (i === 1){
+      window.addEventListener('beforeunload', this.preventDefault)
+    }
+
+    const preventDefault = (event) => {
       event.preventDefault()
-      event.returnValue = '' 
-    })
+      event.returnValue = ''
+    }
 
     return page
   }

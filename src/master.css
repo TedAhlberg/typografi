@@ -22,6 +22,15 @@ span{
     margin-top: 30px;
 }
 
+a{
+    color: #242424;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #fff9f5;
+}
+
 button{
     font-size: 16pt;
     font-family: 'PT Serif', serif;
@@ -51,7 +60,29 @@ button{
 }
 
 .surveyQuestion {
+    margin-top: 20px;
     font-family: 'Open Sans';
+}
+
+.exampleText {
+    margin-top: 15px;
+    margin-bottom: -20px;
+}
+
+.exampleText>p {
+    font-family: 'Open Sans';
+    margin-bottom: 0px;
+}
+
+.exampleText>div{
+    font-family: var(--main-article-font);
+    font-size: var(--main-article-size);
+    padding: 15px;
+    padding-left: 18px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 5px 0px #d1cdc9;
+    border-radius: 10px;
 }
 
 .radioGroup{

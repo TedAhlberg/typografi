@@ -9,14 +9,18 @@ const getRandomElementFrom = (array, size) => {
 }
 
 const getFastestFont = (articleData) => {
-  let fastestFont = Infinity, fontIndex
-  for (var i = 0; i < articleData.length; i++) {
-    if (fastestFont > articleData[i].rawSpeed) {
-      fastestFont = articleData[i].rawSpeed
-      fontIndex = i
-    }
-  }
-  return articleData[fontIndex].readFont 
+  // För bara Arial
+  return 1
+
+  // För snabbast font
+  // let fastestFont = Infinity, fontIndex
+  // for (var i = 0; i < articleData.length; i++) {
+  //   if (fastestFont > articleData[i].rawSpeed) {
+  //     fastestFont = articleData[i].rawSpeed
+  //     fontIndex = i
+  //   }
+  // }
+  // return articleData[fontIndex].readFont 
 }
 
 export default { getRandomElementFrom, getFastestFont }

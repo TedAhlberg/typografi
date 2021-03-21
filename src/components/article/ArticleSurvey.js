@@ -1,5 +1,6 @@
 import React from 'react'
 import articles from './../../res/articles.json'
+import typo from './../../res/typo.json'
 
 const VALID_INPUT = "#242424"
 const INVALID_INPUT = "#c25050"
@@ -102,13 +103,30 @@ class ArticleSurvey extends React.Component {
         </div>
       </div>
     )
+    
+    let exampleMessage = ""
+    if(this.props.testType === "font"){
+      exampleMessage = "Exempeltext skriven med föregående artikels typsnitt:"
+    } else {
+      exampleMessage = "Exempeltext skriven med föregående artikels typstorlek:"
+    }
+
+    let exampleText = (
+      <div 
+        className="exampleText">
+          <p>{exampleMessage}</p>
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+      </div>
+    )
 
     if (this.props.testType === "font") {
       return (
         <div id="surveyContainer">
           <h1>Artikelenkät</h1>
-          {/* <h2>{articles[currentArticle].title}</h2> */}
 
+          {this.props.zoomTest}
           {question}
 
           <span id="aRg2">
@@ -203,8 +221,9 @@ class ArticleSurvey extends React.Component {
       return (
         <div id="surveyContainer">
           <h1>Artikelenkät</h1>
-          {/* <h2>{articles[currentArticle].title}</h2> */}
+          
           {question}
+          {exampleText}
 
           <span id="aRg2">
             Hur estetiskt tilltalande upplevde du storleken på föregående typsnitt?

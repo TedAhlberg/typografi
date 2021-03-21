@@ -3,6 +3,12 @@ var touchArray = [],
   lastTime = 0,
   latestMove = ""
 
+var zoom = false,
+  pinchStart,
+  pinchMove,
+  pinchEnd,
+  zoomArray = []
+
 const touchStart = (event) => {
   let time = new Date().getTime()
   let start = {
@@ -15,6 +21,21 @@ const touchStart = (event) => {
     start: start
   })
   lastTime = time
+
+  //pinchStart
+  if (event.touches.length === 2) {
+    zoom = true
+    pinchStart = {
+      point1: {
+        x: event.touches[0].clientX,
+        y: event.touches[0].clientY
+      },
+      point2: {
+        x: event.touches[1].clientX,
+        y: event.touches[1].clientY
+      }
+    }
+  }
 }
 
 const touchMove = (event) => {
@@ -28,7 +49,21 @@ const touchMove = (event) => {
     }
 
     startToEndArray.push(latestMove)
-    console.log(latestMove)
+    // console.log(latestMove)
+
+    //pinchMove
+    if (zoom) {
+      pinchMove = {
+        point1: {
+          x: event.touches[0].clientX,
+          y: event.touches[0].clientY
+        },
+        point2: {
+          x: event.touches[1].clientX,
+          y: event.touches[1].clientY
+        }
+      }
+    }
   }
 }
 
@@ -43,7 +78,41 @@ const touchEnd = () => {
 
     touchArray[touchArray.length - 1].end = end
     touchArray[touchArray.length - 1].startToEnd = startToEndArray
+
+    if (zoom) {
+      pinchEnd = {
+        point1: {
+          x: pinchMove.point1.x,
+          y: pinchMove.point1.y
+        },
+        point2: {
+          x: pinchMove.point2.x,
+          y: pinchMove.point2.y
+        }
+      }
+
+      calculateZoom()
+      zoom = false
+    }
   }
+}
+
+const calculateZoom = () => {
+  let dist1 = Math.hypot(
+    pinchStart.point1.x - pinchEnd.point1.x,
+    pinchStart.point1.y - pinchEnd.point1.y
+  )
+  let dist2 = Math.hypot(
+    pinchStart.point2.x - pinchEnd.point2.x,
+    pinchStart.point2.y - pinchEnd.point2.y
+  )
+
+  let zoomData = {
+    dist1: dist1,
+    dist2: dist2,
+    time: new Date().getTime()
+  }
+  zoomArray.push(zoomData)
 }
 
 const getArray = () => {
@@ -52,9 +121,16 @@ const getArray = () => {
   return temp
 }
 
+const getZoomArray = () => {
+  let temp = zoomArray
+  zoomArray = []
+  return temp
+}
+
 export default {
   touchStart,
   touchMove,
   touchEnd,
-  getArray
+  getArray,
+  getZoomArray
 }
